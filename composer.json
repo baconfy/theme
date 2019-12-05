@@ -1,0 +1,13 @@
+{
+    "name": "baconfy/laravel-theme",
+    "description": "Baconfy Theme",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Renato Dehnhardt",
+            "email": "renatotkd@gmail.com"
+        }
+    ],
+    "require": {}
+}
