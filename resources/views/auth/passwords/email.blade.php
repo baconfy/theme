@@ -1,4 +1,4 @@
-@extends('baconfy::layouts.auth')
+@extends('theme::layouts.auth')
 
 @section('content')
 <div class="container">

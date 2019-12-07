@@ -11371,64 +11371,13 @@ input:-webkit-autofill:active {
   padding: 0 !important;
 }
 
-.form-group {
-  border: 1px solid #cccccc;
-  padding: 8px 10px;
+.auth .image,
+.auth .login {
+    min-height: 100vh;
 }
 
-.form-group label {
-  font-family: "Quicksand", sans-serif;
-  font-size: 0.8rem !important;
-  font-weight: 500 !important;
-  color: #717171 !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-.form-group .form-control {
-  height: 1.4rem !important;
-  border: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  color: #a23e3e;
-}
-
-.auth {
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  display: -webkit-box;
-  display: flex;
-  height: 100vh;
-}
-
-.auth .logo {
-  margin-bottom: 30px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.8rem;
-  color: #a23e3e;
-}
-
-.auth .logo img {
-  display: block;
-  margin: auto;
-  width: 25%;
-}
-
-.auth .background {
-  background: url("http://images.pexels.com/photos/660282/pexels-photo-660282.jpeg") center;
-  background-size: cover;
-  height: 100vh;
-  width: 75%;
-}
-
-.auth .content {
-  margin: auto;
-  width: 25%;
-}
-
-.auth .content .container {
-  margin: auto;
-  width: 75%;
+.auth .image {
+    background-position: center;
+    background-size: cover;
 }
 

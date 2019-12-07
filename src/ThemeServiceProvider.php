@@ -2,10 +2,13 @@
 
 namespace Baconfy\Theme;
 
+use Baconfy\Theme\Traits\Loaders;
 use Illuminate\Support\ServiceProvider;
 
 class ThemeServiceProvider extends ServiceProvider
 {
+    use Loaders;
+
     /**
      * Bootstrap any application services.
      *
@@ -13,14 +16,7 @@ class ThemeServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom($this->getViewsDirectory(), 'baconfy');
-    }
-
-    /**
-     * @return false|string
-     */
-    private function getViewsDirectory()
-    {
-        return realpath(__DIR__ . '/../resources/views');
+        $this->loadViewsFrom($this->getViewsDirectory(), 'theme');
+        $this->mergeConfigFrom($this->getConfigDirectory(), 'theme');
     }
 }

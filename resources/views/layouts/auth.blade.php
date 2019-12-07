@@ -16,17 +16,31 @@
 </head>
 
 <body class="auth">
-    <section class="background"></section>
-    <section class="content">
-        <div class="container">
-            <div class="logo">
-                <img src="/baconfy/images/logo.svg" />
-                {{ config('app.name') }}
-            </div>
-            @yield('content')
-        </div>
-    </section>
+<div class="container-fluid">
+    <div class="row no-gutter">
+        <div class="d-none d-md-flex col-md-6 col-lg-8 image" style="background-image: url('{{ config('theme.guest.background') }}')"></div>
+        <div class="col-md-6 col-lg-4">
+            <div class="login d-flex align-items-center py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9 col-lg-8 mx-auto">
+                            <div class="logo mb-4">
+                                <img src="{{ config('theme.logo') }}"/>
+                                <h1>{{ config('app.name') }}</h1>
+                            </div>
 
-    <script src="/baconfy/app.js"></script>
+                            <h3 class="login-heading mb-4">@yield('title')</h3>
+
+                            @yield('content')
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="/baconfy/app.js"></script>
 </body>
 </html>

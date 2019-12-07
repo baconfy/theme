@@ -1,6 +1,7 @@
-const mix = require('laravel-mix');
+const assets = require('laravel-mix');
 
-mix
-    .js('resources/js/app.js', 'resources/baconfy')
-    .sass('resources/sass/app.scss', 'resources/baconfy')
-    .copy('resources/images/*', 'resources/baconfy/images');
+assets
+    .setPublicPath(path.normalize('public/baconfy'))
+    .options({processCssUrls: false})
+    .js('resources/js/app.js', 'js/baconfy.js')
+    .sass('resources/sass/app.scss', 'css/baconfy.css');

@@ -1,23 +1,16 @@
 .auth {
-  font-family: $font-family-sans-serif;
-  font-size: 1rem;
-  display: flex;
-  height: 100vh;
 
-  .logo {
-    margin-bottom: 30px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.8rem;
-    color: $primary;
-
-    img {
-      display: block;
-      margin: auto;
-      width: 25%;
-    }
+  .image, .login {
+    min-height: 100vh;
   }
 
-  @import "auth/background";
-  @import "auth/content";
+  .image {
+    background-position: center;
+    background-size: cover;
+  }
+
+  .login {
+    .custom-control-label {
+    }
+  }
 }
