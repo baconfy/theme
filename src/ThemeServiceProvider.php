@@ -16,7 +16,7 @@ class ThemeServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom($this->getViewsDirectory(), 'theme');
-        $this->mergeConfigFrom($this->getConfigDirectory(), 'theme');
+        $this->loadViewsFrom($this->getViewsDirectory(), 'baconfy');
+        $this->mergeConfigFrom($this->getConfigDirectory(), 'baconfy');
     }
 }

@@ -28,7 +28,7 @@ trait Loaders
      */
     protected function getConfigDirectory()
     {
-        return $this->getRootDirectory('config/theme.php');
+        return $this->getRootDirectory('config/baconfy.php');
     }
 
     /**

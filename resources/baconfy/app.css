@@ -1,4 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Quicksand:300,500|Roboto:400,500,700&display=swap);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,500|Roboto:400,500,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Oleo+Script&display=swap);
+
+@charset "UTF-8";
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
@@ -8,7 +11,7 @@
  */
 
 :root {
-  --blue: #007bff;
+    --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
@@ -11360,15 +11363,31 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 30px white inset !important;
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
 .no-border {
-  border: none !important;
+    border: none !important;
 }
 
 .no-padding {
-  padding: 0 !important;
+    padding: 0 !important;
+}
+
+.auth .logo {
+    font-family: "Oleo Script", cursive;
+    text-align: center;
+    color: #a23e3e;
+}
+
+.auth .logo h1 {
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 4rem;
+}
+
+.auth .logo img {
+    width: 30%;
 }
 
 .auth .image,

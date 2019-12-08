@@ -1,4 +1,20 @@
 .auth {
+  .logo {
+    font-family: 'Oleo Script', cursive;
+    text-align: center;
+    color: $primary;
+    background: #0b2e13;
+
+    h1 {
+      padding: 0 !important;
+      margin: 0 !important;
+      font-size: 4rem;
+    }
+
+    img {
+      width: 30%;
+    }
+  }
 
   .image, .login {
     min-height: 100vh;
@@ -7,6 +23,7 @@
   .image {
     background-position: center;
     background-size: cover;
+    font-size: 10px;
   }
 
   .login {
