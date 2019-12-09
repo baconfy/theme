@@ -21,10 +21,14 @@
 
   .image {
     background-position: center;
+    background-color: $primary;
     background-size: cover;
 
     .slogan {
-      background: #338765;
+      font-family: $font-family-sans-serif;
+      font-size: 2rem;
+      color: #ffffff;
+      padding: 1.5rem;
     }
   }
 

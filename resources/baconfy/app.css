@@ -11,7 +11,7 @@
  */
 
 :root {
-    --blue: #007bff;
+  --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
@@ -11363,40 +11363,48 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 30px white inset !important;
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
 .no-border {
-    border: none !important;
+  border: none !important;
 }
 
 .no-padding {
-    padding: 0 !important;
+  padding: 0 !important;
 }
 
 .auth .logo {
-    font-family: "Oleo Script", cursive;
-    text-align: center;
-    color: #a23e3e;
+  font-family: "Oleo Script", cursive;
+  text-align: center;
+  color: #a23e3e;
 }
 
 .auth .logo h1 {
-    padding: 0 !important;
-    margin: 0 !important;
-    font-size: 4rem;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: 4rem;
 }
 
 .auth .logo img {
-    width: 30%;
+  width: 30%;
 }
 
 .auth .image,
 .auth .login {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 .auth .image {
-    background-position: center;
-    background-size: cover;
+  background-position: center;
+  background-color: #a23e3e;
+  background-size: cover;
+}
+
+.auth .image .slogan {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: #ffffff;
+  padding: 1.5rem;
 }
 

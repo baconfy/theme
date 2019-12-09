@@ -2920,8 +2920,8 @@
     for (var i = 0, len = elements.length; i < len; i++) {
       var _ret = _loop(i);
 
-      if (_ret === "continue") continue;
-    }
+      if (_ret === "continue")
+          }
 
     return createdDocument.body.innerHTML;
   }
@@ -7453,7 +7453,7 @@ function nodeName( elem, name ) {
 
   return elem.nodeName && elem.nodeName.toLowerCase() === name.toLowerCase();
 
-};
+}
 var rsingleTag = ( /^<([a-z][^\/\0>:\x20\t\r\n\f]*)[\x20\t\r\n\f]*\/?>(?:<\/\1>|)$/i );
 
 
@@ -15234,24 +15234,19 @@ return jQuery;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(global, module) {var __WEBPACK_AMD_DEFINE_RESULT__;/**
- * @license
- * Lodash <https://lodash.com/>
- * Copyright OpenJS Foundation and other contributors <https://openjsf.org/>
- * Released under MIT license <https://lodash.com/license>
- * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
- * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
- */
-;(function() {
+            /* WEBPACK VAR INJECTION */
+            (function (global, module) {
+                var __WEBPACK_AMD_DEFINE_RESULT__;
+                (function () {
 
-  /** Used as a safe reference for `undefined` in pre-ES5 environments. */
-  var undefined;
+                    /** Used as a safe reference for `undefined` in pre-ES5 environments. */
+                    var undefined;
 
-  /** Used as the semantic version number. */
-  var VERSION = '4.17.15';
+                    /** Used as the semantic version number. */
+                    var VERSION = '4.17.15';
 
-  /** Used as the size to enable large array optimizations. */
-  var LARGE_ARRAY_SIZE = 200;
+                    /** Used as the size to enable large array optimizations. */
+                    var LARGE_ARRAY_SIZE = 200;
 
   /** Error message constants. */
   var CORE_ERROR_TEXT = 'Unsupported core-js use. Try https://npms.io/search?q=ponyfill.',
@@ -35073,10 +35068,11 @@ try {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/rdehnhardt/Code/organizations/rdehnhardt/laravel-theme/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/rdehnhardt/Code/organizations/rdehnhardt/laravel-theme/resources/sass/app.scss */"./resources/sass/app.scss");
+            __webpack_require__(/*! /home/rdehnhardt/Code/organizations/baconfy/theme/resources/js/app.js */"./resources/js/app.js");
+            module.exports = __webpack_require__(/*! /home/rdehnhardt/Code/organizations/baconfy/theme/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
-/***/ })
+            /***/
+        })
 
 /******/ });

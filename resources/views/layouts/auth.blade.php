@@ -20,7 +20,7 @@
 <div class="container-fluid">
     <div class="row no-gutter">
 
-        <div class="d-none d-md-flex col-md-6 col-lg-8 image" style="background-image: url('{{ config('baconfy.guest.background') }}')">
+        <div class="d-none d-flex align-content-end flex-wrap col-md-6 col-lg-8 image" style="background-image: url('{{ config('baconfy.guest.background') }}')">
             <div class="slogan">{{ config('baconfy.guest.slogan') }}</div>
         </div>
 
