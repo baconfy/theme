@@ -2921,7 +2921,7 @@
       var _ret = _loop(i);
 
       if (_ret === "continue")
-          }
+    }
 
     return createdDocument.body.innerHTML;
   }
@@ -15248,15 +15248,15 @@ return jQuery;
                     /** Used as the size to enable large array optimizations. */
                     var LARGE_ARRAY_SIZE = 200;
 
-  /** Error message constants. */
-  var CORE_ERROR_TEXT = 'Unsupported core-js use. Try https://npms.io/search?q=ponyfill.',
-      FUNC_ERROR_TEXT = 'Expected a function';
+                    /** Error message constants. */
+                    var CORE_ERROR_TEXT = 'Unsupported core-js use. Try https://npms.io/search?q=ponyfill.',
+                        FUNC_ERROR_TEXT = 'Expected a function';
 
-  /** Used to stand-in for `undefined` hash values. */
-  var HASH_UNDEFINED = '__lodash_hash_undefined__';
+                    /** Used to stand-in for `undefined` hash values. */
+                    var HASH_UNDEFINED = '__lodash_hash_undefined__';
 
-  /** Used as the maximum memoize cache size. */
-  var MAX_MEMOIZE_SIZE = 500;
+                    /** Used as the maximum memoize cache size. */
+                    var MAX_MEMOIZE_SIZE = 500;
 
   /** Used as the internal argument placeholder. */
   var PLACEHOLDER = '__lodash_placeholder__';
@@ -35066,7 +35066,7 @@ try {
   !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
   \*************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function (module, exports, __webpack_require__) {
 
             __webpack_require__(/*! /home/rdehnhardt/Code/organizations/baconfy/theme/resources/js/app.js */"./resources/js/app.js");
             module.exports = __webpack_require__(/*! /home/rdehnhardt/Code/organizations/baconfy/theme/resources/sass/app.scss */"./resources/sass/app.scss");

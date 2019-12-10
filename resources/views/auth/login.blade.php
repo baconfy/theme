@@ -1,21 +1,20 @@
 @extends('baconfy::layouts.auth')
 
-@section('title', __('Welcome Back'))
+@section('title', __('Sign In'))
 
 @section('content')
+    <p>Welcome back! Please signin to continue.</p>
     <form method="POST" action="{{ route('login') }}">
         @csrf
 
-        <div class="form-group">
-            <label for="email">{{ __('E-mail Address') }}</label>
-            <input type="email" id="email" class="form-control @error('email') is-invalid @enderror" placeholder="{{ __('E-mail Address') }}" required autofocus/>
-            @error('email')<span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>@enderror
+        <div class="form-label-group">
+            <input type="email" id="email" class="form-control @error('email') is-invalid @enderror" placeholder="{{ __('e-mail address') }}" required autofocus>
+            <label for="email">{{ __('e-mail address') }}</label>
         </div>
 
-        <div class="form-group">
-            <label for="password">{{ __('Password') }}</label>
-            <input type="password" id="password" class="form-control @error('password') is-invalid @enderror" placeholder="Password" required/>
-            @error('password')<span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>@enderror
+        <div class="form-label-group">
+            <input type="password" id="password" class="form-control @error('password') is-invalid @enderror" placeholder="{{ __('password') }}" required/>
+            <label for="password">{{ __('password') }}</label>
         </div>
 
         <div class="custom-control custom-checkbox mb-3">

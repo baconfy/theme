@@ -19,7 +19,6 @@
 <body class="auth">
 <div class="container-fluid">
     <div class="row no-gutter">
-
         <div class="d-none d-flex align-content-end flex-wrap col-md-6 col-lg-8 image" style="background-image: url('{{ config('baconfy.guest.background') }}')">
             <div class="slogan">{{ config('baconfy.guest.slogan') }}</div>
         </div>
@@ -34,7 +33,7 @@
                                 <h1>{{ config('app.name') }}</h1>
                             </div>
 
-                            <h3 class="login-heading mb-4">@yield('title')</h3>
+                            <h3 class="login-heading mb-1">@yield('title')</h3>
                             @yield('content')
                         </div>
                     </div>

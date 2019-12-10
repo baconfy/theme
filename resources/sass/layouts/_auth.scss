@@ -33,7 +33,10 @@
   }
 
   .login {
-    .custom-control-label {
+    font-family: $font-family-sans-serif;
+
+    .login-heading, p {
+      color: $gray-500;
     }
   }
 }
