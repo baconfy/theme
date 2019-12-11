@@ -15258,15 +15258,15 @@ return jQuery;
                     /** Used as the maximum memoize cache size. */
                     var MAX_MEMOIZE_SIZE = 500;
 
-  /** Used as the internal argument placeholder. */
-  var PLACEHOLDER = '__lodash_placeholder__';
+                    /** Used as the internal argument placeholder. */
+                    var PLACEHOLDER = '__lodash_placeholder__';
 
-  /** Used to compose bitmasks for cloning. */
-  var CLONE_DEEP_FLAG = 1,
-      CLONE_FLAT_FLAG = 2,
-      CLONE_SYMBOLS_FLAG = 4;
+                    /** Used to compose bitmasks for cloning. */
+                    var CLONE_DEEP_FLAG = 1,
+                        CLONE_FLAT_FLAG = 2,
+                        CLONE_SYMBOLS_FLAG = 4;
 
-  /** Used to compose bitmasks for value comparisons. */
+                    /** Used to compose bitmasks for value comparisons. */
   var COMPARE_PARTIAL_FLAG = 1,
       COMPARE_UNORDERED_FLAG = 2;
 
@@ -35062,11 +35062,11 @@ try {
 /***/ }),
 
 /***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function (module, exports, __webpack_require__) {
+        /*!*************************************************************!*\
+          !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
+          \*************************************************************/
+        /*! no static exports found */
+        /***/ (function (module, exports, __webpack_require__) {
 
             __webpack_require__(/*! /home/rdehnhardt/Code/organizations/baconfy/theme/resources/js/app.js */"./resources/js/app.js");
             module.exports = __webpack_require__(/*! /home/rdehnhardt/Code/organizations/baconfy/theme/resources/sass/app.scss */"./resources/sass/app.scss");

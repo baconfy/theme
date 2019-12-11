@@ -1,6 +1,6 @@
 :root {
-  --input-padding-y: 1rem;
-  --input-padding-x: 1rem;
+  --input-padding-y: 0.9rem;
+  --input-padding-x: 0.9rem;
 }
 
 .form-label-group {
@@ -8,7 +8,7 @@
   position: relative;
 
   & > input, & > label {
-    padding: calc(var(--input-padding-y) * 1) var(--input-padding-x) var(--input-padding-y) var(--input-padding-x);
+    padding: var(--input-padding-y) var(--input-padding-x) var(--input-padding-y) var(--input-padding-x);
     height: auto;
   }
 

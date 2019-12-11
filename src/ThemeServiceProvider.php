@@ -16,7 +16,11 @@ class ThemeServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        // Resources
+        $this->loadTranslationsFrom($this->getTranslationsDirectory(), 'baconfy');
         $this->loadViewsFrom($this->getViewsDirectory(), 'baconfy');
+
+        // Configs
         $this->mergeConfigFrom($this->getConfigDirectory(), 'baconfy');
     }
 }
