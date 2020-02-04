@@ -1,5 +1,31 @@
 @extends('baconfy::layouts.auth')
 
+@section('title', __('baconfy::guest.passwords.title'))
+
+@section('content')
+    <p>{{ __('baconfy::guest.passwords.welcome') }}</p>
+
+    <form method="POST" action="{{ route('password.update') }}">
+        <input type="hidden" name="token" value="{{ $token }}">
+        @csrf
+
+        <div class="form-label-group">
+            <input type="email" id="email" class="form-control @error('email') is-invalid @enderror" name="email" placeholder="{{ __('baconfy::guest.login.email') }}" required autofocus>
+            <label for="email">{{ __('baconfy::guest.login.email') }}</label>
+        </div>
+
+        <button class="btn btn-primary btn-block btn-login mb-2" type="submit">{{ __('baconfy::guest.passwords.send') }}</button>
+
+        @if (Route::has('login'))
+            <div class="text-center"><a class="small" href="{{ route('login') }}">{{ __('baconfy::guest.register.already-account') }}</a></div>
+        @endif
+    </form>
+@endsection
+
+
+
+@extends('baconfy::layouts.auth')
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -11,7 +37,7 @@
                     <form method="POST" action="{{ route('password.update') }}">
                         @csrf
 
-                        <input type="hidden" name="token" value="{{ $token }}">
+
 
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
@@ -33,11 +59,7 @@
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
+
                             </div>
                         </div>
 

@@ -19,6 +19,12 @@ return [
         'welcome' => 'Fill in the information below to register.',
     ],
 
+    'passwords' => [
+        'welcome' => 'Fill your e-mail account to reset your password.',
+        'title' => 'Reset Password',
+        'send' => 'Send reset link',
+    ],
+
     'verify' => [
         'title' => 'E-mail Verification',
         'welcome' => 'Verify Your Email Address',
