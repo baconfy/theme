@@ -21,6 +21,8 @@ return [
 
     'passwords' => [
         'welcome' => 'Fill your e-mail account to reset your password.',
+        'create-password' => 'Fill this form to create your new password.',
+        'confirmation' => 'Confirm Password',
         'title' => 'Reset Password',
         'send' => 'Send reset link',
     ],
