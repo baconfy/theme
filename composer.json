@@ -1,6 +1,6 @@
 {
-  "name": "baconfy/theme",
-  "description": "Baconfy Laravel Theme",
+  "name": "baconfy/ui",
+  "description": "Baconfy User Interface",
   "type": "library",
   "license": "MIT",
   "authors": [
@@ -14,13 +14,13 @@
   },
   "autoload": {
     "psr-4": {
-      "Baconfy\\Theme\\": "src/"
+      "Baconfy\\Ui\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Baconfy\\Theme\\ThemeServiceProvider"
+        "Baconfy\\Ui\\UiServiceProvider"
       ]
     }
   }

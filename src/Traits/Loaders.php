@@ -1,6 +1,6 @@
 <?php
 
-namespace Baconfy\Theme\Traits;
+namespace Baconfy\Ui\Traits;
 
 trait Loaders
 {
