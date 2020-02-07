@@ -27,6 +27,11 @@ return [
         'send' => 'Send reset link',
     ],
 
+    'confirm-password' => [
+        'welcome' => 'Please confirm your password before continuing.',
+        'title' => 'Confirm Password',
+    ],
+
     'verify' => [
         'title' => 'E-mail Verification',
         'welcome' => 'Verify Your Email Address',
