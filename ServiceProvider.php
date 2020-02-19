@@ -16,7 +16,7 @@ class ServiceProvider extends LaravelServiceProvider
      */
     public function boot()
     {
-        $this->mergeConfigFrom($this->getClassDirectory('config/ui.php'), 'ui');
+        $this->mergeConfigFrom($this->getClassDirectory('ui.php'), 'ui');
         $this->loadViewsFrom($this->getClassDirectory('views'), 'ui');
     }
 }
