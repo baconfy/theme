@@ -10,17 +10,20 @@
     }
   ],
   "require": {
-    "illuminate/support": "~6.0"
+    "baconfy/support": "^6.0"
   },
   "autoload": {
     "psr-4": {
-      "Baconfy\\Ui\\": "src/"
+      "Baconfy\\Ui\\": ""
     }
   },
   "extra": {
+    "branch-alias": {
+      "dev-master": "6.x-dev"
+    },
     "laravel": {
       "providers": [
-        "Baconfy\\Ui\\UiServiceProvider"
+        "Baconfy\\Ui\\ServiceProvider"
       ]
     }
   }

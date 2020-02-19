@@ -1,4 +1,4 @@
-@extends('baconfy::layouts.auth')
+@extends('ui::layouts.auth')
 
 @section('title', __('baconfy::guest.confirm-password.title'))
 
