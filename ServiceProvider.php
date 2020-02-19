@@ -16,7 +16,32 @@ class ServiceProvider extends LaravelServiceProvider
      */
     public function boot()
     {
+        $this->bootAssets();
+        $this->bootConfig();
+        $this->bootViews();
+    }
+
+    /**
+     * Boot assets
+     */
+    private function bootAssets()
+    {
+        $this->publishes([$this->getClassDirectory('assets/dist') => public_path('baconfy/ui')], 'public');
+    }
+
+    /**
+     * Boot configuration
+     */
+    private function bootConfig()
+    {
         $this->mergeConfigFrom($this->getClassDirectory('ui.php'), 'ui');
+    }
+
+    /**
+     * Boot views
+     */
+    private function bootViews()
+    {
         $this->loadViewsFrom($this->getClassDirectory('views'), 'ui');
     }
 }

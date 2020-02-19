@@ -4,7 +4,7 @@ return [
     /**
      * Application Logo
      */
-    'logo' => '/baconfy/img/logo.svg',
+    'logo' => '/baconfy/ui/img/logo.svg',
 
     /**
      * Guest Page Settings

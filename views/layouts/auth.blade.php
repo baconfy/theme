@@ -12,15 +12,15 @@
 
     <title>{{ config('app.name') }}</title>
 
-    <link rel="icon" href="{{ config('baconfy.logo') }}" type="image/svg+xml"/>
-    <link rel="stylesheet" href="/baconfy/app.css"/>
+    <link rel="icon" href="{{ config('ui.logo') }}" type="image/svg+xml"/>
+    <link rel="stylesheet" href="/baconfy/ui/app.css"/>
 </head>
 
 <body class="auth">
 <div class="container-fluid">
     <div class="row no-gutter">
-        <div class="d-none d-md-flex d-lg-flex d-xl-flex align-content-end flex-wrap col-md-6 col-lg-8 image" style="background-image: url('{{ config('baconfy.guest.background') }}')">
-            <div class="slogan">{{ config('baconfy.guest.text') }}</div>
+        <div class="d-none d-md-flex d-lg-flex d-xl-flex align-content-end flex-wrap col-md-6 col-lg-8 image" style="background-image: url('{{ config('ui.guest.background') }}')">
+            <div class="slogan">{{ config('ui.guest.text') }}</div>
         </div>
 
         <div class="col-md-6 col-lg-4">
@@ -29,7 +29,7 @@
                     <div class="row">
                         <div class="col-md-9 col-lg-8 mx-auto">
                             <div class="logo mb-4">
-                                <img src="{{ config('baconfy.logo') }}"/>
+                                <img src="{{ config('ui.logo') }}"/>
                                 <h1>{{ config('app.name') }}</h1>
                             </div>
 
@@ -45,6 +45,6 @@
 </div>
 
 
-<script src="/baconfy/app.js"></script>
+<script src="/baconfy/ui/app.js"></script>
 </body>
 </html>
