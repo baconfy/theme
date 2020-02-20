@@ -1,10 +1,11 @@
 $input-height: 20px;
 
 .form-group {
-  border: 1px solid $primary;
-  padding: .375rem .75rem;
+  border: 1px solid $input-border-color;
+  padding: .275rem .55rem;
 
   .form-control {
+    color: $input-border-color !important;
     border-radius: 0 !important;
     line-height: 0 !important;
     padding: 0 !important;
@@ -20,6 +21,10 @@ $input-height: 20px;
 
   label {
     text-transform: uppercase;
-    font-size: .75rem;
+    letter-spacing: .01rem;
+    line-height: .6rem;
+    font-size: .6rem;
+    font-weight: 700;
+    color: $primary;
   }
 }
