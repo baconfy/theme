@@ -1,0 +1,25 @@
+$input-height: 20px;
+
+.form-group {
+  border: 1px solid $primary;
+  padding: .375rem .75rem;
+
+  .form-control {
+    border-radius: 0 !important;
+    line-height: 0 !important;
+    padding: 0 !important;
+    border: none;
+
+    line-height: $input-height !important;
+    height: $input-height !important;
+
+    &::placeholder {
+      color: $input-placeholder-color;
+    }
+  }
+
+  label {
+    text-transform: uppercase;
+    font-size: .75rem;
+  }
+}
