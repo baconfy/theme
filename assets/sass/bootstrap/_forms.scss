@@ -1,18 +1,29 @@
-$input-height: 20px;
+$input-height: 15px;
 
 .form-group {
   border: 1px solid $input-border-color;
-  padding: .275rem .55rem;
+  background-color: $input-bg;
+  padding: 5px 12px 9px 12px;
+
+  @include border-radius($input-border-radius, 0);
+
+  &:focus-within {
+    border-color: var(--brand-color);
+
+    label {
+      color: var(--brand-color);
+    }
+  }
 
   .form-control {
-    color: $input-border-color !important;
+    color: $gray-700 !important;
     border-radius: 0 !important;
     line-height: 0 !important;
     padding: 0 !important;
     border: none;
 
-    line-height: $input-height !important;
-    height: $input-height !important;
+    line-height: $input-height!important;
+    height: $input-height * 1.2 !important;
 
     &::placeholder {
       color: $input-placeholder-color;
@@ -20,11 +31,10 @@ $input-height: 20px;
   }
 
   label {
-    text-transform: uppercase;
-    letter-spacing: .01rem;
-    line-height: .6rem;
-    font-size: .6rem;
-    font-weight: 700;
-    color: $primary;
+    font-family: $font-family-monospace;
+    line-height: 12px;
+    font-weight: 500;
+    color: $gray-500;
+    font-size: 12px;
   }
 }

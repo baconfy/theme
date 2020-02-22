@@ -1,0 +1,7 @@
+.app {
+  background: $gray-600;
+  display: flex;
+
+  @import "components/navigation";
+  @import "components/main";
+}

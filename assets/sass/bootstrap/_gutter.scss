@@ -1,0 +1,9 @@
+.gutter {
+  margin-right: ($grid-gutter-width / 2) * -1;
+  margin-left: ($grid-gutter-width / 2) * -1;
+
+  > .col, > [class*="col-"] {
+    margin-right: ($grid-gutter-width / 2);
+    margin-left: ($grid-gutter-width / 2);
+  }
+}

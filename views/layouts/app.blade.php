@@ -1,18 +1,21 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="format-detection" content="telephone=no"/>
-    <meta name="mobile-web-app-capable" content="yes"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="theme-color" content="#016087"/>
-    <meta name="referrer" content="origin"/>
+@extends('ui::layouts.empty', ['class' => 'app'])
 
-    <title>Baconfy</title>
-</head>
-<body>
+@section('page')
+    <input type="checkbox" id="navigation-open" />
 
-</body>
-</html>
+    <nav class="navigation">
+        <ul>
+            <li>Home</li>
+            <li>Customers</li>
+            <li>Products</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <label for="navigation-open" class="navigation-toggle" role="button" aria-labelledby="menu">&#xf0c9;</label>
+
+        @yield('content')
+    </main>
+@endsection

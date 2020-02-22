@@ -11,8 +11,10 @@
     },
     "devDependencies": {
         "bootstrap": "^4.0.0",
+        "bootstrap-social": "^5.1.1",
         "copy-webpack-plugin": "^5.0.5",
         "cross-env": "^5.1",
+        "@fortawesome/fontawesome-free": "^5.12.1",
         "jquery": "^3.2",
         "laravel-mix": "^4.0.7",
         "lodash": "^4.17.13",

@@ -1,29 +1,33 @@
 .auth {
   .logo {
-    font-family: 'Oleo Script', cursive;
+    font-family: $font-family-brand;
+    color: var(--brand-color);
+    margin-bottom: 70px;
     text-align: center;
-    color: $primary;
+    display: block;
 
     h1 {
+      margin: -20px 0 0 0 !important;
       padding: 0 !important;
-      margin: 0 !important;
-      margin-top: -20px !important;
-      font-size: 4rem;
+      font-size: 5rem;
     }
 
     img {
-      width: 20%;
+      width: 25%;
     }
   }
 
-  .image, .login {
+  .image, .content {
     min-height: 100vh;
   }
 
   .image {
+    background-color: var(--brand-color);
     background-position: center;
-    background-color: $primary;
     background-size: cover;
+
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
 
     .slogan {
       font-family: $font-family-sans-serif;
@@ -33,10 +37,10 @@
     }
   }
 
-  .login {
+  .content {
     font-family: $font-family-sans-serif;
 
-    .login-heading, p {
+    .content-heading, p {
       color: $gray-600;
     }
   }

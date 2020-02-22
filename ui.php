@@ -12,5 +12,6 @@ return [
     'guest' => [
         'background' => 'https://i.imgur.com/CfGXzrQ.jpg',
         'text' => 'Everything is better with bacon.',
-    ]
+    ],
+
 ];
