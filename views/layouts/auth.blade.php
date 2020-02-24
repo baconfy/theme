@@ -8,7 +8,7 @@
         </div>
 
         <div class="col-md-6 col-lg-4">
-            <div class="content d-flex align-items-center py-5">
+            <div class="content d-flex align-items-center">
                 <div class="container">
                     <div class="row pb-5">
                         <div class="col-md-9 col-lg-8 mx-auto">
