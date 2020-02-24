@@ -8,7 +8,6 @@
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="theme-color" content="#a23e3e" />
-    <meta name="referrer" content="origin" />
 
     <title>{{ config('app.name') }}</title>
 
