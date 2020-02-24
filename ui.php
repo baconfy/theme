@@ -4,7 +4,17 @@ return [
     /**
      * Application Logo
      */
-    'logo' => '/baconfy/ui/img/logo.svg',
+    'brand-vertical' => '/baconfy/ui/img/brand-vertical.png',
+
+    /**
+     * Application Logo
+     */
+    'brand-horizontal' => '/baconfy/ui/img/brand-horizontal.png',
+
+    /**
+     * Application Logo
+     */
+    'brand-icon' => '/baconfy/ui/img/icon.svg',
 
     /**
      * Guest Page Settings

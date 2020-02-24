@@ -11001,14 +11001,8 @@ a.text-dark:focus {
   display: block;
 }
 
-.auth .logo h1 {
-  margin: -20px 0 0 0 !important;
-  padding: 0 !important;
-  font-size: 5rem;
-}
-
 .auth .logo img {
-  width: 25%;
+  width: 70%;
 }
 
 .auth .image,
@@ -11044,14 +11038,18 @@ a.text-dark:focus {
 }
 
 .app {
-  background: #6c757d;
+  background: #ffffff;
   display: flex;
 }
 
 .app .navigation {
   position: absolute;
-  padding: 20px;
+  padding: 1rem 0;
   width: 250px;
+}
+
+.app .navigation .brand {
+  margin: 30px;
 }
 
 .app #navigation-open {

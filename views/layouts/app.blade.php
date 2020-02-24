@@ -1,9 +1,13 @@
 @extends('ui::layouts.empty', ['class' => 'app'])
 
 @section('page')
-    <input type="checkbox" id="navigation-open" />
+    <input type="checkbox" id="navigation-open"/>
 
     <nav class="navigation">
+        <div class="brand">
+            <img src="{{ config('ui.brand-horizontal') }}" class="img-fluid"/>
+        </div>
+
         <ul>
             <li>Home</li>
             <li>Customers</li>

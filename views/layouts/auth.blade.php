@@ -13,8 +13,7 @@
                     <div class="row pb-5">
                         <div class="col-md-9 col-lg-8 mx-auto">
                             <div class="logo">
-                                <img src="{{ config('ui.logo') }}"/>
-                                <h1>{{ config('app.name') }}</h1>
+                                <img src="{{ config('ui.brand-vertical') }}" class="img-fluid" />
                             </div>
 
                             <h3 class="content-heading mb-1">@yield('title')</h3>

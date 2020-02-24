@@ -1,7 +1,11 @@
 .navigation {
   position: absolute;
-  padding: 20px;
+  padding: 1rem 0;
   width: 250px;
+
+  .brand {
+    margin: 30px;
+  }
 }
 
 #navigation-open {
