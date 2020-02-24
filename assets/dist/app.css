@@ -10945,6 +10945,11 @@ a.text-dark:focus {
   color: var(--brand-color);
 }
 
+.form-group.is-invalid {
+  margin-bottom: 0 !important;
+  border-color: #dc3545;
+}
+
 .form-group .form-control {
   color: #495057 !important;
   border-radius: 0 !important;
@@ -10981,6 +10986,11 @@ a.text-dark:focus {
   font-weight: 500;
   color: #adb5bd;
   font-size: 12px;
+}
+
+.is-invalid ~ .invalid-feedback {
+  margin-bottom: 1rem !important;
+  margin-top: 0 !important;
 }
 
 .auth .logo {

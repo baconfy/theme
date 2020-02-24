@@ -15,6 +15,11 @@ $input-height: 15px;
     }
   }
 
+  &.is-invalid {
+    margin-bottom: 0 !important;
+    border-color: $red;
+  }
+
   .form-control {
     color: $gray-700 !important;
     border-radius: 0 !important;
@@ -22,7 +27,7 @@ $input-height: 15px;
     padding: 0 !important;
     border: none;
 
-    line-height: $input-height!important;
+    line-height: $input-height !important;
     height: $input-height * 1.2 !important;
 
     &::placeholder {
@@ -37,4 +42,9 @@ $input-height: 15px;
     color: $gray-500;
     font-size: 12px;
   }
+}
+
+.is-invalid ~ .invalid-feedback {
+  margin-bottom: 1rem !important;
+  margin-top: 0 !important;
 }
