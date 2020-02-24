@@ -11,7 +11,7 @@
 
     <title>{{ config('app.name') }}</title>
 
-    <link rel="icon" href="{{ config('ui.logo') }}" type="image/svg+xml"/>
+    <link rel="icon" href="{{ config('ui.brand-icon') }}" type="image/svg+xml"/>
     <link rel="stylesheet" href="/baconfy/ui/app.css"/>
 </head>
 
