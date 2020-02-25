@@ -6,6 +6,6 @@
   flex: 1;
 }
 
-#navigation-open:checked ~ .main {
+#navigation-toggle:checked ~ .main {
   transform: translateX($navigation-size);
 }

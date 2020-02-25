@@ -1,0 +1,8 @@
+.navigation {
+  position: absolute !important;
+  width: $navigation-size;
+}
+
+label[for="navigation-toggle"] {
+  display: block !important;
+}
