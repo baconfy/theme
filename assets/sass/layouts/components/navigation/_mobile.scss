@@ -1,6 +1,7 @@
 .navigation {
   position: absolute !important;
   width: $navigation-size;
+  height: 100vh;
 }
 
 label[for="navigation-toggle"] {

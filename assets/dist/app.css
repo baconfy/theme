@@ -11064,6 +11064,7 @@ a.text-dark:focus {
   .app .navigation {
     position: absolute !important;
     width: 300px;
+    height: 100vh;
   }
 
   .app label[for=navigation-toggle] {
@@ -11075,6 +11076,7 @@ a.text-dark:focus {
   .app .navigation {
     position: absolute !important;
     width: 300px;
+    height: 100vh;
   }
 
   .app label[for=navigation-toggle] {
@@ -11096,6 +11098,7 @@ a.text-dark:focus {
   .app .navigation {
     position: absolute !important;
     width: 300px;
+    height: 100vh;
   }
 
   .app label[for=navigation-toggle] {
@@ -11117,6 +11120,7 @@ a.text-dark:focus {
   .app .navigation {
     position: absolute !important;
     width: 300px;
+    height: 100vh;
   }
 
   .app label[for=navigation-toggle] {
@@ -11148,6 +11152,7 @@ a.text-dark:focus {
   .app .navigation {
     position: absolute !important;
     width: 300px;
+    height: 100vh;
   }
 
   .app label[for=navigation-toggle] {
@@ -11159,6 +11164,7 @@ a.text-dark:focus {
   .app .navigation {
     position: absolute !important;
     width: 300px;
+    height: 100vh;
   }
 
   .app label[for=navigation-toggle] {
@@ -11170,6 +11176,7 @@ a.text-dark:focus {
   .app .navigation {
     position: absolute !important;
     width: 300px;
+    height: 100vh;
   }
 
   .app label[for=navigation-toggle] {
@@ -11181,6 +11188,7 @@ a.text-dark:focus {
   .app .navigation {
     position: absolute !important;
     width: 300px;
+    height: 100vh;
   }
 
   .app label[for=navigation-toggle] {
@@ -11192,6 +11200,7 @@ a.text-dark:focus {
   .app .navigation {
     position: absolute !important;
     width: 300px;
+    height: 100vh;
   }
 
   .app label[for=navigation-toggle] {
@@ -11203,6 +11212,7 @@ a.text-dark:focus {
   .app .navigation {
     position: absolute !important;
     width: 300px;
+    height: 100vh;
   }
 
   .app label[for=navigation-toggle] {
@@ -11214,6 +11224,7 @@ a.text-dark:focus {
   .app .navigation {
     position: absolute !important;
     width: 300px;
+    height: 100vh;
   }
 
   .app label[for=navigation-toggle] {
@@ -11225,6 +11236,7 @@ a.text-dark:focus {
   .app .navigation {
     position: absolute !important;
     width: 300px;
+    height: 100vh;
   }
 
   .app label[for=navigation-toggle] {
@@ -11236,6 +11248,7 @@ a.text-dark:focus {
   .app .navigation {
     position: absolute !important;
     width: 300px;
+    height: 100vh;
   }
 
   .app label[for=navigation-toggle] {
@@ -11247,6 +11260,7 @@ a.text-dark:focus {
   .app .navigation {
     position: absolute !important;
     width: 300px;
+    height: 100vh;
   }
 
   .app label[for=navigation-toggle] {
@@ -11258,6 +11272,7 @@ a.text-dark:focus {
   .app .navigation {
     position: absolute !important;
     width: 300px;
+    height: 100vh;
   }
 
   .app label[for=navigation-toggle] {
@@ -11269,6 +11284,7 @@ a.text-dark:focus {
   .app .navigation {
     position: absolute !important;
     width: 300px;
+    height: 100vh;
   }
 
   .app label[for=navigation-toggle] {
@@ -11280,6 +11296,7 @@ a.text-dark:focus {
   .app .navigation {
     position: absolute !important;
     width: 300px;
+    height: 100vh;
   }
 
   .app label[for=navigation-toggle] {
@@ -11291,6 +11308,7 @@ a.text-dark:focus {
   .app .navigation {
     position: absolute !important;
     width: 300px;
+    height: 100vh;
   }
 
   .app label[for=navigation-toggle] {
@@ -11302,6 +11320,7 @@ a.text-dark:focus {
   .app .navigation {
     position: absolute !important;
     width: 300px;
+    height: 100vh;
   }
 
   .app label[for=navigation-toggle] {
@@ -11313,6 +11332,7 @@ a.text-dark:focus {
   .app .navigation {
     position: absolute !important;
     width: 300px;
+    height: 100vh;
   }
 
   .app label[for=navigation-toggle] {
@@ -11324,6 +11344,7 @@ a.text-dark:focus {
   .app .navigation {
     position: absolute !important;
     width: 300px;
+    height: 100vh;
   }
 
   .app label[for=navigation-toggle] {
@@ -11335,6 +11356,7 @@ a.text-dark:focus {
   .app .navigation {
     position: absolute !important;
     width: 300px;
+    height: 100vh;
   }
 
   .app label[for=navigation-toggle] {
@@ -11344,6 +11366,105 @@ a.text-dark:focus {
 
 .app .navigation-toggle {
   display: none !important;
+}
+
+.app .navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.app .navigation .header {
+  text-align: center;
+  display: block;
+  padding: 1rem;
+}
+
+.app .navigation .header .brand {
+  margin-top: 1rem;
+}
+
+.app .navigation .header .brand img {
+  max-height: 50px;
+}
+
+.app .navigation .header .profile {
+  flex-direction: column;
+  margin-top: 2rem;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #6c757d;
+}
+
+.app .navigation .header .profile .image {
+  margin-bottom: 1rem;
+}
+
+.app .navigation .header .profile .image a {
+  position: absolute;
+  font-size: 1rem;
+}
+
+.app .navigation .header .profile .image img {
+  border-radius: 100px;
+  max-width: 100px;
+}
+
+.app .navigation .content {
+  margin-top: 2rem;
+  display: block;
+  height: 100vh;
+}
+
+.app .navigation .content ul li a {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 2.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #6c757d;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+.app .navigation .content ul li a.active {
+  background: #F4F5F7;
+}
+
+.app .navigation .content ul li a:hover {
+  background: #F4F5F7;
+  cursor: pointer;
+}
+
+.app .navigation .content ul li a i {
+  margin-right: 0.8rem;
+  font-size: 1rem;
+}
+
+.app .navigation .footer {
+  justify-content: space-between;
+  display: flex;
+  padding: 5px;
+}
+
+.app .navigation .footer a {
+  color: #d6dae2;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0.2rem 0;
+  display: block;
+  width: 100%;
+}
+
+.app .navigation .footer a:hover {
+  background: #d6dae2;
+  color: #b9bfcc;
 }
 
 .app .main {

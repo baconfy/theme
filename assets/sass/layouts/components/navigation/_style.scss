@@ -1,3 +1,13 @@
 .navigation-toggle {
   display: none !important;
 }
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @import "header";
+  @import "content";
+  @import "footer";
+}

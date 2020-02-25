@@ -1,0 +1,39 @@
+.header {
+  text-align: center;
+  display: block;
+  padding: 1rem;
+
+  .brand {
+    margin-top: 1rem;
+
+    img {
+      max-height: 50px;
+    }
+  }
+
+  .profile {
+    flex-direction: column;
+    margin-top: 2rem;
+    display: flex;
+
+    font-family: $font-family-monospace;
+    text-transform: uppercase;
+    font-size: .85rem;
+    font-weight: 500;
+    color: $gray-600;
+
+    .image {
+      margin-bottom: 1rem;
+
+      a {
+        position: absolute;
+        font-size: 1rem;
+      }
+
+      img {
+        border-radius: 100px;
+        max-width: 100px;
+      }
+    }
+  }
+}

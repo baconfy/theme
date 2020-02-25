@@ -1,0 +1,36 @@
+.content {
+  margin-top: 2rem;
+  display: block;
+  height: 100vh;
+
+  ul {
+    li {
+      a {
+        font-family: $font-family-monospace;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1rem 2.5rem;
+        font-size: .85rem;
+        font-weight: 500;
+        color: $gray-600;
+        cursor: pointer;
+        display: block;
+        width: 100%;
+
+        &.active {
+          background: $body-bg;
+        }
+
+        &:hover {
+          background: $body-bg;
+          cursor: pointer;
+        }
+
+        i {
+          margin-right: .8rem;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

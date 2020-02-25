@@ -1,24 +1,41 @@
 @extends('ui::layouts.empty', ['class' => 'app'])
 
 @section('page')
-    <input type="checkbox" id="navigation-toggle" class="navigation-toggle" />
+    <input type="checkbox" id="navigation-toggle" class="navigation-toggle"/>
 
     <nav class="navigation">
-        <div class="brand">
-            <img src="{{ config('ui.brand-horizontal') }}" class="img-fluid"/>
+        <div class="header">
+            <div class="brand">
+                <img src="{{ config('ui.brand-horizontal') }}" class="img-fluid" />
+            </div>
+
+            <div class="profile">
+                <div class="image">
+                    <img src="https://scontent-zrh1-1.cdninstagram.com/v/t51.2885-19/s320x320/81837291_226677125012477_7004163985494769664_n.jpg?_nc_ht=scontent-zrh1-1.cdninstagram.com&_nc_ohc=Qto9fUA_ApAAX-FBnfI&oh=46b433280b1ac6bfe0429f3aba6e8a72&oe=5E81F12C" class="img-fluid"/>
+                    <a href="#" data-toggle="tooltip" title="My profile"><i class="fas fa-cog"></i></a>
+                </div>
+
+                {{ Auth::user()->name }}
+            </div>
         </div>
 
-        <div class="profile">
-            <img src="https://scontent-zrh1-1.cdninstagram.com/v/t51.2885-19/s320x320/81837291_226677125012477_7004163985494769664_n.jpg?_nc_ht=scontent-zrh1-1.cdninstagram.com&_nc_ohc=Qto9fUA_ApAAX-FBnfI&oh=46b433280b1ac6bfe0429f3aba6e8a72&oe=5E81F12C" class="img-fluid rounded-circle" />
+        <div class="content">
+            <ul>
+                <li><a href="#" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-user-tie"></i> Accounts</a></li>
+                <li><a href="#"><i class="fas fa-boxes"></i> Products</a></li>
+                <li><a href="#"><i class="fas fa-users"></i> Users</a></li>
+                <li><a href="#"><i class="fas fa-user-tag"></i> Roles</a></li>
+            </ul>
         </div>
 
-        <ul>
-            <li>Home</li>
-            <li>Customers</li>
-            <li>Products</li>
-            <li>Services</li>
-            <li>Contact</li>
-        </ul>
+        <div class="footer">
+            <a href="#" data-toggle="tooltip" title="Settings"><i class="fas fa-sliders-h"></i></a>
+            <a href="#" data-toggle="tooltip" title="Support"><i class="fas fa-headset"></i></a>
+            <a href="#" data-toggle="tooltip" title="Logout" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><i class="fas fa-sign-out-alt"></i></a>
+
+            <form id="logout-form" action="{{ route('logout') }}" method="POST">@csrf</form>
+        </div>
     </nav>
 
     <main class="main">
