@@ -86,10 +86,10 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./js/app.js":
-/*!*******************!*\
-  !*** ./js/app.js ***!
-  \*******************/
+/***/ "./assets/js/app.js":
+/*!**************************!*\
+  !*** ./assets/js/app.js ***!
+  \**************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -103,6 +103,17 @@ try {
 
   $('[data-toggle="tooltip"]').tooltip();
 } catch (e) {}
+
+/***/ }),
+
+/***/ "./assets/sass/app.scss":
+/*!******************************!*\
+  !*** ./assets/sass/app.scss ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -35057,26 +35068,15 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./sass/app.scss":
-/*!***********************!*\
-  !*** ./sass/app.scss ***!
-  \***********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ 0:
-/*!*****************************************!*\
-  !*** multi ./js/app.js ./sass/app.scss ***!
-  \*****************************************/
+/*!*******************************************************!*\
+  !*** multi ./assets/js/app.js ./assets/sass/app.scss ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/rdehnhardt/Code/baconfy/ui/assets/js/app.js */"./js/app.js");
-module.exports = __webpack_require__(/*! /Users/rdehnhardt/Code/baconfy/ui/assets/sass/app.scss */"./sass/app.scss");
+__webpack_require__(/*! /Users/rdehnhardt/Code/baconfy/ui/assets/js/app.js */"./assets/js/app.js");
+module.exports = __webpack_require__(/*! /Users/rdehnhardt/Code/baconfy/ui/assets/sass/app.scss */"./assets/sass/app.scss");
 
 
 /***/ })

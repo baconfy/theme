@@ -1,6 +1,6 @@
 composer.phar
-/node_modules
-/vendor
+node_modules
+vendor
 .idea
 composer.lock
 package-lock.json
