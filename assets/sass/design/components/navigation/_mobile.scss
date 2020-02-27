@@ -1,6 +1,6 @@
 .navigation {
   position: absolute !important;
-  width: $navigation-size;
+  width: var(--navigation-size);
   height: 100vh;
 }
 

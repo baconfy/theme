@@ -1,11 +1,10 @@
 .main {
   transition: transform .3s;
   transform: translateX(0);
-  background: $body-bg;
   padding: 50px;
   flex: 1;
 }
 
 #navigation-toggle:checked ~ .main {
-  transform: translateX($navigation-size);
+  transform: translateX(var(--navigation-size));
 }

@@ -1,5 +1,5 @@
 .navigation {
-  width: $navigation-size;
+  width: var(--navigation-size);
 }
 
 label[for="navigation-toggle"] {

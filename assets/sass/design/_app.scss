@@ -1,5 +1,5 @@
 .app {
-  background: #ffffff;
+  background: var(--body-bg);
   display: flex;
 
   @import "components/navigation";
