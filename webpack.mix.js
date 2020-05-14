@@ -1,6 +1,7 @@
 const mix = require('laravel-mix');
 
-mix
-    .sass('assets/sass/app.scss', 'dist')
-    .copy('assets/images', 'dist/img')
-    .js('assets/js/app.js', 'dist')
+require('laravel-mix-tailwind');
+
+mix.js('assets/js/app.js', 'dist/js')
+    .postCss('assets/css/app.css', 'dist/css')
+    .tailwind('./tailwind.config.js');
