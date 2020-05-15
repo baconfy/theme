@@ -1,12 +1,21 @@
 @extends('ui::layouts.empty', ['class' => 'app'])
 
+@push('styles')
+    <link rel="icon" href="{{ config('ui.brand-icon') }}" type="image/svg+xml"/>
+    <link rel="stylesheet" href="/baconfy/ui/app.css"/>
+@endpush
+
+@push('scripts')
+    <script src="/baconfy/ui/app.js"></script>
+@endpush
+
 @section('page')
     <input type="checkbox" id="navigation-toggle" class="navigation-toggle"/>
 
     <nav class="navigation">
         <div class="header">
             <div class="brand">
-                <img src="{{ config('ui.brand-horizontal') }}" class="img-fluid" />
+                <img src="{{ config('ui.brand-horizontal') }}" class="img-fluid"/>
             </div>
 
             <div class="profile">

@@ -42,6 +42,6 @@ class ServiceProvider extends LaravelServiceProvider
      */
     private function bootViews()
     {
-        $this->loadViewsFrom($this->getClassDirectory('views'), 'ui');
+        $this->loadViewsFrom($this->getClassDirectory('resources/views'), 'ui');
     }
 }
