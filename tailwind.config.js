@@ -1,9 +1,14 @@
 module.exports = {
   purge: [
-    './resources/assets/css/**/*.css',
+    './resources/views/**/*.blade.php',
+    './resources/css/**/*.css',
   ],
   theme: {
-    extend: {}
+    extend: {
+      colors: {
+        primary: '#C94748',
+      },
+    }
   },
   variants: {},
   plugins: [
