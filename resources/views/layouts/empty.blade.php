@@ -11,18 +11,19 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Baconfy') }}</title>
 
     <!-- Styles -->
     <link rel="icon" href="{{ config('ui.brand-icon') }}" type="image/svg+xml"/>
     <link rel="stylesheet" href="/baconfy/ui/app.css"/>
-@stack('styles')
-
-<!-- Scripts -->
-    <script src="/baconfy/ui/app.js"></script>
-    @stack('scripts')
+    @stack('styles')
 </head>
 <body class="bg-gray-100 h-screen antialiased leading-none {{ $class ?? '' }}">
 @yield('page')
 </body>
+
+<!-- Scripts -->
+<script src="/baconfy/ui/app.js"></script>
+@stack('scripts')
+
 </html>

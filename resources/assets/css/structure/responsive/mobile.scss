@@ -1,0 +1,17 @@
+label[for="navigation-toggle"] {
+  display: block !important;
+}
+
+.navigation {
+  transform: translateX(calc(theme('sizes.navigation') * -1));
+  width: theme('sizes.navigation');
+  position: absolute !important;
+  transition: transform .3s;
+  height: 100vh;
+
+  background: #b8b6b6;
+}
+
+#navigation-toggle:checked ~ .navigation {
+  transform: translateX(0);
+}

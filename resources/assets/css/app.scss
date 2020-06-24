@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* HTML */
+@import "html/body";
+
+/* Structure */
+@import "structure/navigation";
+@import "structure/main";
+
+/* Components */
+@import "components/forms";

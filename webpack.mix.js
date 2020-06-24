@@ -3,7 +3,7 @@ const mix = require('laravel-mix');
 require('laravel-mix-tailwind');
 
 mix
-    .postCss('resources/assets/css/app.css', 'dist/')
+    .sass('resources/assets/css/app.scss', 'dist/')
     .tailwind('./tailwind.config.js');
 
 if (mix.inProduction()) {
