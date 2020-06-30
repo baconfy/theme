@@ -3,7 +3,7 @@
 namespace Baconfy\Ui;
 
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
-use Baconfy\Support\Traits\ReflectionTrait;
+use Baconfy\Traits\ReflectionTrait;
 
 class ServiceProvider extends LaravelServiceProvider
 {
@@ -18,6 +18,7 @@ class ServiceProvider extends LaravelServiceProvider
     {
         $this->bootAssets();
         $this->bootConfig();
+        $this->bootTranslations();
         $this->bootViews();
     }
 
@@ -43,5 +44,13 @@ class ServiceProvider extends LaravelServiceProvider
     private function bootViews()
     {
         $this->loadViewsFrom($this->getClassDirectory('resources/views'), 'ui');
+    }
+
+    /**
+     * Boot languages
+     */
+    private function bootTranslations()
+    {
+        $this->loadTranslationsFrom($this->getClassDirectory('resources/languages'), 'ui');
     }
 }

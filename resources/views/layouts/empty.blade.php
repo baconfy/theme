@@ -14,16 +14,18 @@
     <title>{{ config('app.name', 'Baconfy') }}</title>
 
     <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
     <link rel="icon" href="{{ config('ui.brand-icon') }}" type="image/svg+xml"/>
     <link rel="stylesheet" href="/baconfy/ui/app.css"/>
     @stack('styles')
 </head>
-<body class="bg-gray-100 h-screen antialiased leading-none {{ $class ?? '' }}">
+
+<body class="{{ $class ?? '' }}">
 @yield('page')
 </body>
 
 <!-- Scripts -->
 <script src="/baconfy/ui/app.js"></script>
 @stack('scripts')
-
 </html>

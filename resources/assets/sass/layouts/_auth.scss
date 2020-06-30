@@ -1,0 +1,55 @@
+.auth {
+  font-family: var(--bs-font-sans-serif);
+  display: flex;
+  height: 100vh;
+
+  aside {
+    align-items: flex-end;
+    display: flex;
+    width: 70%;
+
+    p {
+      padding-left: 1.5rem;
+      font-weight: 600;
+      font-size: 2rem;
+      color: $white;
+      opacity: .7;
+    }
+  }
+
+  main {
+    justify-content: center;
+    background: $gray-100;
+    align-items: center;
+    display: flex;
+    width: 30%;
+
+    .content {
+      color: $form-switch-color;
+      width: 70%;
+
+      img {
+        margin-bottom: 2rem;
+        max-width: 60%;
+      }
+
+      h1 {
+        font-size: 1.7rem;
+        margin: 0;
+      }
+
+      h2 {
+        font-size: .9rem;
+        margin: 0 0 1rem 0;
+      }
+
+      .form-group, .form-switch {
+        margin-bottom: 8px;
+      }
+
+      .divider {
+        margin: 2rem 0;
+      }
+    }
+  }
+}
