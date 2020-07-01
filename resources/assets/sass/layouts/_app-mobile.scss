@@ -1,0 +1,25 @@
+.app {
+  aside.navigation {
+    transform: translateX($navigation-size * -1);
+    position: absolute !important;
+    transition: transform .3s;
+    width: $navigation-size;
+    height: 100vh;
+  }
+
+  main.content {
+    label[for="navigation-toggle"] {
+      display: block !important;
+    }
+  }
+
+  #navigation-toggle:checked {
+    & ~ .navigation {
+      transform: translateX(0);
+    }
+
+    & ~ .content {
+      transform: translateX($navigation-size);
+    }
+  }
+}

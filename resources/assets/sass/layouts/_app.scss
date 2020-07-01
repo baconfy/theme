@@ -1,0 +1,47 @@
+.app {
+  font-family: var(--bs-font-sans-serif);
+  background: $gray-100;
+  display: flex;
+  height: 100vh;
+
+  aside.navigation {
+    justify-content: space-between;
+    width: $navigation-size;
+    flex-direction: column;
+    display: flex;
+
+    .header {
+      justify-content: center;
+      display: flex;
+      padding: 2rem;
+
+      img {
+        max-height: 48px;
+      }
+    }
+
+    .footer {
+      padding: 1rem 2rem;
+    }
+  }
+
+  main.content {
+    transition: transform .3s;
+    transform: translateX(0);
+    flex: 1;
+
+    label[for="navigation-toggle"] {
+      display: none !important;
+    }
+  }
+}
+
+/* Smartphones */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  @import "app-mobile";
+}
+
+/* Tablets */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  @import "app-mobile";
+}
