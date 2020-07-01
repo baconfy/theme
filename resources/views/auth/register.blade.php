@@ -36,6 +36,11 @@
                 <div class="valid-feedback">{{ $message }}</div>@enderror
             </div>
 
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" name="agreement" id="agreement" {{ old('agreement') ? 'checked' : '' }} />
+                <label class="form-check-label" for="agreement">{!! __('ui::auth.register.agreement') !!}</label>
+            </div>
+
             <button class="btn btn-block btn-primary" type="submit">{{ __('ui::auth.register.action') }}</button>
         </form>
 

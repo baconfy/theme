@@ -15,7 +15,8 @@
     }
   ],
   "require": {
-    "baconfy/support": "^1.0"
+    "baconfy/support": "^1.0",
+    "laracasts/flash": "^3.1"
   },
   "autoload": {
     "psr-4": {

@@ -20,7 +20,7 @@ return [
         'password' => 'Password',
         'remember-password' => 'Remember password',
         'forgot-password' => 'Forgot your password?',
-        'register-here' => 'Don\'t have an account? <a href=":register">Register here</a>',
+        'register-here' => '<p class="text-center">Don\'t have an account? <a href=":register">Register here</a></p>',
     ],
     'register' => [
         'title' => 'Create a new account',
@@ -28,7 +28,7 @@ return [
         'action' => 'Create my account',
         'name' => 'Name',
         'confirm' => 'Confirm Password',
-        'agreement' => 'I agree to <a href=":terms">Terms of Service</a> & <a href=":privacy">Privacy policy</a>',
+        'agreement' => 'I agree to <a href=":terms">Terms of Service</a> & <a href=":privacy">Privacy Policy</a>',
         'already-account' => 'I already have an account?',
         'back-action' => 'Back to login',
     ],

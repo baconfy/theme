@@ -4,17 +4,18 @@
 @section('welcome', __('ui::auth.confirm.welcome'))
 
 @section('content')
-    <section class="mt-1">
-        <form class="form" method="POST" action="{{ route('password.confirm') }}">
+    <section>
+        <form method="POST" action="{{ route('password.confirm') }}">
             @csrf
 
-            <div class="input @error('password') border-red-500 @enderror">
-                <label class="@error('password') text-red-500 @enderror" for="password">{{ __('ui::auth.login.password') }}</label>
-                <input id="password" type="password" class="@error('password') border-red-500 @enderror" name="password" required autocomplete="new-password">
-                @error('password')<p>{{ $message }}</p>@enderror
+            <div class="form-group">
+                <label class="form-label" for="password">{{ __('ui::auth.login.password') }}</label>
+                <input id="password" type="password" class="form-control" name="password" required/>
+                @error('password')
+                <div class="valid-feedback">{{ $message }}</div>@enderror
             </div>
 
-            <button class="block w-full rounded bg-primary text-white p-3 mt-4 mb-8" type="submit">{{ __('ui::auth.confirm.action') }}</button>
+            <button class="btn btn-block btn-primary" type="submit">{{ __('ui::auth.confirm.action') }}</button>
         </form>
 
         <div class="divider"></div>
