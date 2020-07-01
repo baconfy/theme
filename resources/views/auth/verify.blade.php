@@ -11,7 +11,5 @@
     <p>{{ __('ui::auth.verify.before') }}</p>
     <p>{{ __('ui::auth.verify.receive') }}, <a href="#" onclick="event.preventDefault(); document.getElementById('resend-verification-form').submit();">{{ __('ui::auth.verify.request') }}</a>.</p>
 
-    <form id="resend-verification-form" method="POST" action="{{ route('verification.resend') }}" class="hidden">
-        @csrf
-    </form>
+    <form id="resend-verification-form" method="POST" action="{{ route('verification.resend') }}" class="hidden">@csrf</form>
 @endsection

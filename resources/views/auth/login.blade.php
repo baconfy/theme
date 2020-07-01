@@ -31,7 +31,6 @@
 
     @if (Route::has('password.request'))
         <div class="divider"></div>
-
         <a class="d-block text-center" href="{{ route('password.request') }}">{{ __('ui::auth.login.forgot-password') }}</a>
 
         @if (Route::has('register'))

@@ -32,8 +32,5 @@
     </form>
 
     <div class="divider"></div>
-
-    <p class="text-center">
-        {{ __('ui::auth.register.already-account') }} <a class="text-blue-500 hover:text-blue-700 no-underline" href="{{ route('login') }}">{{ __('ui::auth.register.back-action') }}</a>
-    </p>
+    <p class="text-center">{{ __('ui::auth.register.already-account') }} <a href="{{ route('login') }}">{{ __('ui::auth.register.back-action') }}</a></p>
 @endsection

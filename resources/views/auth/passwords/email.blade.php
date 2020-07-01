@@ -13,7 +13,7 @@
 
         <div class="form-group">
             <label class="form-label" for="email">{{ __('ui::auth.login.email') }}</label>
-            <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autocomplete="email"/>
+            <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required/>
             @error('email')
             <div class="valid-feedback">{{ $message }}</div>@enderror
         </div>
@@ -23,8 +23,6 @@
 
     @if (Route::has('login'))
         <div class="divider"></div>
-        <p class="text-center">
-            {{ __('ui::auth.register.already-account') }} <a href="{{ route('login') }}">{{ __('ui::auth.register.back-action') }}</a>
-        </p>
+        <p class="text-center">{{ __('ui::auth.register.already-account') }} <a href="{{ route('login') }}">{{ __('ui::auth.register.back-action') }}</a></p>
     @endif
 @endsection
