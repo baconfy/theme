@@ -45,5 +45,8 @@ return [
         'before' => 'Before proceeding, please check your email for a verification link.',
         'receive' => 'If you did not receive the email',
         'request' => 'click here to request another',
+    ],
+    'social' => [
+        'sign-in' => 'or sign in with'
     ]
 ];

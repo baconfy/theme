@@ -4,13 +4,13 @@
 @section('welcome', __('ui::auth.login.welcome'))
 
 @section('content')
-    <section>
+    <section class="login">
         <form method="POST" action="{{ route('login') }}">
             @csrf
 
             <div class="form-group">
                 <label class="form-label" for="email">{{ __('ui::auth.login.email') }}</label>
-                <input id="email" type="email" name="email" class="form-control" value="testete@teste.vom" required autocomplete="email" autofocus/>
+                <input id="email" type="email" name="email" class="form-control" value="{{ old('email') }}" required autocomplete="email" autofocus/>
                 @error('email')
                 <div class="valid-feedback">{{ $message }}</div>@enderror
             </div>
@@ -43,15 +43,5 @@
         </section>
     @endif
 
-    @if (1 or Route::has('social-login'))
-        <section>
-            <div class="divider dot"></div>
-            <p class="text-center">or login with</p>
-
-            <div class="d-flex">
-                <a href="#" class="btn btn-facebook flex-grow-1 mr-1"><i class="fab fa-facebook-f mr-2"></i> Facebook</a>
-                <a href="#" class="btn btn-google flex-grow-1 ml-1"><i class="fab fa-google mr-2"></i> Google</a>
-            </div>
-        </section>
-    @endif
+    @include('ui::auth.social')
 @endsection
