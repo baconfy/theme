@@ -10,38 +10,21 @@
     flex-direction: column;
     display: flex;
 
-    .header {
-      justify-content: center;
-      display: flex;
-      padding: 2rem;
-
-      img {
-        max-height: 48px;
-      }
-    }
-
-    .footer {
-      padding: 1rem 2rem;
-    }
+    @import "partials/navigation/header";
+    @import "partials/navigation/module";
+    @import "partials/navigation/content";
+    @import "partials/navigation/footer";
   }
 
-  main.content {
-    transition: transform .3s;
-    transform: translateX(0);
-    flex: 1;
-
-    label[for="navigation-toggle"] {
-      display: none !important;
-    }
-  }
+  @import "partials/main";
 }
 
 /* Smartphones */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  @import "app-mobile";
+  @import "partials/mobile";
 }
 
 /* Tablets */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  @import "app-mobile";
+  @import "partials/mobile";
 }

@@ -9,14 +9,25 @@
         </section>
 
         <section class="module">
-            MODULE
+            <i class="fas fa-th selector"></i>
+
+            <ul class="items">
+                <li><a href="#"><i class="far fa-chart-bar"></i> Analytics</a></li>
+                <li><a href="#"><i class="far fa-chart-bar"></i> Roles</a></li>
+                <li><a href="#"><i class="far fa-chart-bar"></i> Authentication</a></li>
+            </ul>
         </section>
 
-        <section class="content flex-fill">
-            <ul>
-                <li><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-                <li><a href="#"><i class="fab fa-buromobelexperte"></i> Widgets</a></li>
-            </ul>
+        <section class="content">
+            <fieldset>
+                <legend>Dashboard</legend>
+
+                <ul>
+                    <li><a href="#"><i class="far fa-chart-bar"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="fas fa-stream"></i> My Activity</a></li>
+                    <li><a href="#"><i class="fas fa-th-large"></i> Widgets</a></li>
+                </ul>
+            </fieldset>
         </section>
 
         <section class="footer">

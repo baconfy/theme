@@ -1,0 +1,8 @@
+main.content {
+  transition: transform .3s;
+  transform: translateX(0);
+
+  label[for="navigation-toggle"] {
+    display: none !important;
+  }
+}
