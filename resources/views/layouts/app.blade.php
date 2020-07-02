@@ -20,12 +20,22 @@
 
         <section class="content">
             <fieldset>
-                <legend>Dashboard</legend>
+                <legend>Navigation</legend>
 
                 <ul>
                     <li><a href="#"><i class="far fa-chart-bar"></i> Dashboard</a></li>
                     <li><a href="#"><i class="fas fa-stream"></i> My Activity</a></li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>Settings</legend>
+
+                <ul>
                     <li><a href="#"><i class="fas fa-th-large"></i> Widgets</a></li>
+                    <li><a href="#"><i class="fab fa-sourcetree"></i> Data Sources</a></li>
+                    <li><a href="#"><i class="fas fa-share-alt"></i> Share Dashboard</a></li>
+                    <li><a href="#"><i class="fas fa-globe-americas"></i> Location & Timezone</a></li>
                 </ul>
             </fieldset>
         </section>

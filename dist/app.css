@@ -11153,7 +11153,7 @@ button.close {
 
 .app aside.navigation {
   justify-content: space-between;
-  width: 300px;
+  width: 320px;
   flex-direction: column;
   display: flex;
 }
@@ -11193,9 +11193,13 @@ button.close {
   padding: 2rem 0;
 }
 
+.app aside.navigation .content fieldset {
+  margin-bottom: 2rem;
+}
+
 .app aside.navigation .content fieldset legend {
   text-transform: uppercase;
-  color: var(--bs-primary);
+  color: #adb5bd;
   font-weight: 800;
   font-size: 0.7rem;
   padding: 0 2rem;
@@ -11208,12 +11212,12 @@ button.close {
 }
 
 .app aside.navigation .content fieldset ul li {
-  padding: 0.7rem 3.5rem;
+  padding: 0.4rem 3.5rem;
 }
 
 .app aside.navigation .content fieldset ul li a {
-  color: var(--bs-secondary);
   text-decoration: none;
+  color: #6c757d;
   font-weight: 600;
   font-size: 1rem;
   display: block;
@@ -11221,7 +11225,6 @@ button.close {
 
 .app aside.navigation .content fieldset ul li a i {
   margin-right: 20px;
-  font-size: 1.2rem;
 }
 
 .app aside.navigation .footer {
@@ -11241,10 +11244,10 @@ button.close {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .app aside.navigation {
-    transform: translateX(-300px);
+    transform: translateX(-320px);
     position: absolute !important;
     transition: transform 0.3s;
-    width: 300px;
+    width: 320px;
     height: 100vh;
   }
 
@@ -11257,7 +11260,7 @@ button.close {
   }
 
   .app #navigation-toggle:checked ~ .content {
-    transform: translateX(300px);
+    transform: translateX(320px);
   }
 }
 
@@ -11265,10 +11268,10 @@ button.close {
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .app aside.navigation {
-    transform: translateX(-300px);
+    transform: translateX(-320px);
     position: absolute !important;
     transition: transform 0.3s;
-    width: 300px;
+    width: 320px;
     height: 100vh;
   }
 
@@ -11281,7 +11284,7 @@ button.close {
   }
 
   .app #navigation-toggle:checked ~ .content {
-    transform: translateX(300px);
+    transform: translateX(320px);
   }
 }
 

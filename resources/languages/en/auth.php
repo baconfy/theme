@@ -13,7 +13,7 @@ return [
         'already-account' => 'I already have an account.',
     ],
     'login' => [
-        'title' => 'Restricted Area!',
+        'title' => 'Welcome Back!',
         'welcome' => 'Please fill your credentials to sign in.',
         'action' => 'Sign in',
         'email' => 'E-mail address',

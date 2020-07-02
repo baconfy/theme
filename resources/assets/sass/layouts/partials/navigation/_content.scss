@@ -3,9 +3,11 @@
   padding: 2rem 0;
 
   fieldset {
+    margin-bottom: 2rem;
+
     legend {
       text-transform: uppercase;
-      color: var(--bs-primary);
+      color: $gray-500;
       font-weight: 800;
       font-size: .7rem;
       padding: 0 2rem;
@@ -17,18 +19,17 @@
       margin: 0;
 
       li {
-        padding: .7rem 3.5rem;
+        padding: .4rem 3.5rem;
 
         a {
-          color: var(--bs-secondary);
           text-decoration: none;
+          color: $gray-600;
           font-weight: 600;
           font-size: 1rem;
           display: block;
 
           i {
             margin-right: 20px;
-            font-size: 1.2rem;
           }
         }
       }
