@@ -11162,30 +11162,71 @@ button.close {
   justify-content: center;
   display: flex;
   padding: 2rem;
+  background: #720e9e;
 }
 
 .app aside.navigation .header img {
   max-height: 48px;
 }
 
-.app aside.navigation .module {
-  justify-content: center;
-  padding: 0 2rem;
-  display: flex;
+.app aside.navigation .modules {
+  text-align: center;
 }
 
-.app aside.navigation .module .selector {
+.app aside.navigation .modules .selector {
   color: var(--bs-secondary);
   font-size: 1.3rem;
 }
 
-.app aside.navigation .module .selector:hover {
-  background: #dee2e6;
-  cursor: pointer;
+.app aside.navigation .modules #modules-toggle:checked ~ .items {
+  visibility: visible;
+  display: flex;
+  opacity: 1;
 }
 
-.app aside.navigation .module .items {
+.app aside.navigation .modules .items {
+  box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.1);
+  transition: visibility 0s, opacity 0.5ms ease-in-out;
+  border: 1px solid #ededed;
+  max-width: 310px;
+  border-radius: 10px;
+  position: absolute;
+  visibility: hidden;
+  background: #fff;
+  max-height: 400px;
+  margin-left: 10px;
+  overflow: auto;
+  padding: 5px;
+  z-index: 999;
+  opacity: 0;
   display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.app aside.navigation .modules .items a {
+  flex: 0 29%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #6c757d;
+  font-size: 0.7rem;
+  height: 85px;
+  margin: 1%;
+}
+
+.app aside.navigation .modules .items a:hover {
+  box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.1);
+  background: #f8f9fa;
+}
+
+.app aside.navigation .modules .items a i {
+  margin-bottom: 5px;
+  font-size: 2rem;
 }
 
 .app aside.navigation .content {
@@ -11231,13 +11272,159 @@ button.close {
   padding: 1rem 2rem;
 }
 
+.app .hamburger {
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, -webkit-filter;
+  transition-property: opacity, filter;
+  transition-property: opacity, filter, -webkit-filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
+
+.app .hamburger:hover {
+  opacity: 0.7;
+}
+
+.app .hamburger.is-active:hover {
+  opacity: 0.7;
+}
+
+.app .hamburger.is-active .hamburger-inner {
+  background-color: #000;
+}
+
+.app .hamburger.is-active .hamburger-inner::before {
+  background-color: #000;
+}
+
+.app .hamburger.is-active .hamburger-inner::after {
+  background-color: #000;
+}
+
+.app .hamburger-box {
+  width: 30px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+.app .hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
+  width: 30px;
+  height: 2px;
+  background-color: #000;
+  border-radius: 2px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+
+.app .hamburger-inner::before,
+.app .hamburger-inner::after {
+  width: 30px;
+  height: 2px;
+  background-color: #000;
+  border-radius: 2px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+  content: "";
+  display: block;
+  top: -10px;
+}
+
+.app .hamburger--elastic .hamburger-inner {
+  top: 2px;
+  transition-duration: 0.275s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.app .hamburger--elastic .hamburger-inner::before {
+  top: 10px;
+  transition: opacity 0.125s 0.275s ease;
+}
+
+.app .hamburger--elastic .hamburger-inner::after {
+  top: 20px;
+  transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.app .hamburger--elastic.is-active .hamburger-inner {
+  transform: translate3d(0, 10px, 0) rotate(135deg);
+  transition-delay: 0.075s;
+}
+
+.app .hamburger--elastic.is-active .hamburger-inner::before {
+  transition-delay: 0s;
+  opacity: 0;
+}
+
+.app .hamburger--elastic.is-active .hamburger-inner::after {
+  transform: translate3d(0, -20px, 0) rotate(-270deg);
+  transition-delay: 0.075s;
+}
+
+.app .hamburger--elastic-r .hamburger-inner {
+  top: 2px;
+  transition-duration: 0.275s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.app .hamburger--elastic-r .hamburger-inner::before {
+  top: 10px;
+  transition: opacity 0.125s 0.275s ease;
+}
+
+.app .hamburger--elastic-r .hamburger-inner::after {
+  top: 20px;
+  transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.app .hamburger--elastic-r.is-active .hamburger-inner {
+  transform: translate3d(0, 10px, 0) rotate(-135deg);
+  transition-delay: 0.075s;
+}
+
+.app .hamburger--elastic-r.is-active .hamburger-inner::before {
+  transition-delay: 0s;
+  opacity: 0;
+}
+
+.app .hamburger--elastic-r.is-active .hamburger-inner::after {
+  transform: translate3d(0, -20px, 0) rotate(270deg);
+  transition-delay: 0.075s;
+}
+
 .app main.content {
+  flex: 1 1 auto !important;
   transition: transform 0.3s;
   transform: translateX(0);
+  padding: 2rem;
 }
 
 .app main.content label[for=navigation-toggle] {
   display: none !important;
+}
+
+.app main.content .header {
+  justify-content: space-between;
+  display: flex;
+}
+
+.app main.content .header .profile-image {
+  max-height: 32px;
 }
 
 /* Smartphones */
@@ -11262,6 +11449,37 @@ button.close {
   .app #navigation-toggle:checked ~ .content {
     transform: translateX(320px);
   }
+
+  .app #navigation-toggle:checked ~ .content .hamburger:hover {
+    opacity: 0.7;
+  }
+
+  .app #navigation-toggle:checked ~ .content .hamburger .hamburger-inner {
+    background-color: #000;
+  }
+
+  .app #navigation-toggle:checked ~ .content .hamburger .hamburger-inner::before {
+    background-color: #000;
+  }
+
+  .app #navigation-toggle:checked ~ .content .hamburger .hamburger-inner::after {
+    background-color: #000;
+  }
+
+  .app #navigation-toggle:checked ~ .content .hamburger--elastic .hamburger-inner {
+    transform: translate3d(0, 10px, 0) rotate(135deg);
+    transition-delay: 0.075s;
+  }
+
+  .app #navigation-toggle:checked ~ .content .hamburger--elastic .hamburger-inner::before {
+    transition-delay: 0s;
+    opacity: 0;
+  }
+
+  .app #navigation-toggle:checked ~ .content .hamburger--elastic .hamburger-inner::after {
+    transform: translate3d(0, -20px, 0) rotate(-270deg);
+    transition-delay: 0.075s;
+  }
 }
 
 /* Tablets */
@@ -11285,6 +11503,37 @@ button.close {
 
   .app #navigation-toggle:checked ~ .content {
     transform: translateX(320px);
+  }
+
+  .app #navigation-toggle:checked ~ .content .hamburger:hover {
+    opacity: 0.7;
+  }
+
+  .app #navigation-toggle:checked ~ .content .hamburger .hamburger-inner {
+    background-color: #000;
+  }
+
+  .app #navigation-toggle:checked ~ .content .hamburger .hamburger-inner::before {
+    background-color: #000;
+  }
+
+  .app #navigation-toggle:checked ~ .content .hamburger .hamburger-inner::after {
+    background-color: #000;
+  }
+
+  .app #navigation-toggle:checked ~ .content .hamburger--elastic .hamburger-inner {
+    transform: translate3d(0, 10px, 0) rotate(135deg);
+    transition-delay: 0.075s;
+  }
+
+  .app #navigation-toggle:checked ~ .content .hamburger--elastic .hamburger-inner::before {
+    transition-delay: 0s;
+    opacity: 0;
+  }
+
+  .app #navigation-toggle:checked ~ .content .hamburger--elastic .hamburger-inner::after {
+    transform: translate3d(0, -20px, 0) rotate(-270deg);
+    transition-delay: 0.075s;
   }
 }
 

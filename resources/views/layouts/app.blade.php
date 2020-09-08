@@ -8,16 +8,6 @@
             <img src="{{ config('ui.brand-vertical') }}" class="img-fluid"/>
         </section>
 
-        <section class="module">
-            <i class="fas fa-th selector"></i>
-
-            <ul class="items">
-                <li><a href="#"><i class="far fa-chart-bar"></i> Analytics</a></li>
-                <li><a href="#"><i class="far fa-chart-bar"></i> Roles</a></li>
-                <li><a href="#"><i class="far fa-chart-bar"></i> Authentication</a></li>
-            </ul>
-        </section>
-
         <section class="content">
             <fieldset>
                 <legend>Navigation</legend>
@@ -46,7 +36,23 @@
     </aside>
 
     <main class="content">
-        <label for="navigation-toggle">Open/Close</label>
+        <section class="header">
+            <div class="navigation-toggle">
+                <label for="navigation-toggle" class="hamburger hamburger--elastic" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+                </label>
+            </div>
+
+            <div class="page-title"></div>
+
+            <div class="search-box"></div>
+
+            <div class="control">
+                <img src="/profile.jpg" class="profile-image img-fluid rounded-circle"/>
+            </div>
+        </section>
 
         @yield('content')
     </main>
