@@ -1,8 +1,14 @@
 .by-header {
+  padding: 1.5rem;
   display: flex;
+  align-items: center;
+
+  label[for="by-navigation-toggle"] {
+    margin-top: 4px;
+  }
 
   .by-page-title {
-    line-height: 2rem;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    color: $gray-600;
   }
 }

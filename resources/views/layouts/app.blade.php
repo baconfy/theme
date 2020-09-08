@@ -1,7 +1,7 @@
 @extends('ui::layouts.empty', ['class' => 'by-app'])
 
 @section('page')
-    <input type="checkbox" class="d-none" id="navigation-toggle"/>
+    <input type="checkbox" class="d-none" id="by-navigation-toggle"/>
 
     <aside class="by-navigation">
         <section class="by-header">
@@ -37,15 +37,15 @@
 
     <main class="by-content">
         <section class="by-header">
-            <label for="navigation-toggle" class="hamburger hamburger--elastic" type="button">
+            <label for="by-navigation-toggle" class="hamburger hamburger--elastic" type="button">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                 </span>
             </label>
 
-            <div class="search-box">Search</div>
+            <div class="by-page-title">Dashboard</div>
 
-            <div class="control">
+            <div class="control push">
                 <img src="/profile.jpg" class="profile-image img-fluid rounded-circle"/>
             </div>
         </section>

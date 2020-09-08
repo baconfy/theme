@@ -1,12 +1,9 @@
-@import "hamburger";
-
 main.by-content {
   flex: 1 1 auto !important;
   transition: transform .3s;
   transform: translateX(0);
-  background: $gray-200;
 
-  label[for="navigation-toggle"] {
+  label[for="by-navigation-toggle"] {
     display: none !important;
   }
 
