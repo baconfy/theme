@@ -1,14 +1,14 @@
-@extends('ui::layouts.empty', ['class' => 'app'])
+@extends('ui::layouts.empty', ['class' => 'by-app'])
 
 @section('page')
     <input type="checkbox" class="d-none" id="navigation-toggle"/>
 
-    <aside class="navigation">
-        <section class="header">
+    <aside class="by-navigation">
+        <section class="by-header">
             <img src="{{ config('ui.brand-vertical') }}" class="img-fluid"/>
         </section>
 
-        <section class="content">
+        <section class="by-content">
             <fieldset>
                 <legend>Navigation</legend>
 
@@ -30,24 +30,20 @@
             </fieldset>
         </section>
 
-        <section class="footer">
+        <section class="by-footer">
             <a class="btn btn-block btn-sm btn-secondary" href="{{ route('logout') }}" title="{{ __('ui::navigation.logout') }}"><i class="fas fa-power-off mr-1"></i> Sign out</a>
         </section>
     </aside>
 
-    <main class="content">
-        <section class="header">
-            <div class="navigation-toggle">
-                <label for="navigation-toggle" class="hamburger hamburger--elastic" type="button">
+    <main class="by-content">
+        <section class="by-header">
+            <label for="navigation-toggle" class="hamburger hamburger--elastic" type="button">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                 </span>
-                </label>
-            </div>
+            </label>
 
-            <div class="page-title"></div>
-
-            <div class="search-box"></div>
+            <div class="search-box">Search</div>
 
             <div class="control">
                 <img src="/profile.jpg" class="profile-image img-fluid rounded-circle"/>

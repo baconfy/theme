@@ -26,14 +26,14 @@ $line: 2px;
   }
 
   .hamburger-inner {
-    background-color: #000;
+    background-color: $gray-500;
 
     &::before {
-      background-color: #000;
+      background-color: $gray-500;
     }
 
     &::after {
-      background-color: #000;
+      background-color: $gray-500;
     }
   }
 }
@@ -51,7 +51,7 @@ $line: 2px;
   margin-top: -2px;
   width: $nav-width;
   height: $line;
-  background-color: #000;
+  background-color: $gray-500;
   border-radius: $line;
   position: absolute;
   transition-property: transform;
@@ -61,7 +61,7 @@ $line: 2px;
   &::before, &::after {
     width: $nav-width;
     height: $line;
-    background-color: #000;
+    background-color: $gray-500;
     border-radius: $line;
     position: absolute;
     transition-property: transform;

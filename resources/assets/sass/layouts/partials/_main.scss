@@ -1,21 +1,14 @@
 @import "hamburger";
 
-main.content {
+main.by-content {
   flex: 1 1 auto !important;
   transition: transform .3s;
   transform: translateX(0);
-  padding: 2rem;
+  background: $gray-200;
 
   label[for="navigation-toggle"] {
     display: none !important;
   }
 
-  .header {
-    justify-content: space-between;
-    display: flex;
-
-    .profile-image {
-      max-height: 32px;
-    }
-  }
+  @import "main/by-header";
 }

@@ -1,16 +1,12 @@
-// Bootstrap
+// Variables
 @import "bootstrap/variables";
 @import "bootstrap/utilities";
-@import "~bootstrap";
 
-// Bootstrap Overwrites
-@import "bootstrap/alert";
-@import "bootstrap/form-groups";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/utilities";
 
 // Layouts
 @import "layouts/auth";
 @import "layouts/app";
-
-// Components
-@import "components/divider";
-@import "components/social-colors";
