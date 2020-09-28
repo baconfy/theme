@@ -17335,7 +17335,7 @@ try {} catch (e) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/vagrant/code/baconfy/ui/resources/assets/js/app.js */"./resources/assets/js/app.js");
+module.exports = __webpack_require__(/*! /Users/rdehnhardt/Code/baconfy/ui/resources/assets/js/app.js */"./resources/assets/js/app.js");
 
 
 /***/ })

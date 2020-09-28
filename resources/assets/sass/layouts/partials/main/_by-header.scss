@@ -11,4 +11,10 @@
     font-size: 1.6rem;
     color: $gray-600;
   }
+
+  .by-control {
+    img {
+      max-height: 30px;
+    }
+  }
 }

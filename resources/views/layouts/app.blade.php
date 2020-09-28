@@ -45,7 +45,7 @@
 
             <div class="by-page-title">Dashboard</div>
 
-            <div class="control push">
+            <div class="by-control push">
                 <img src="/profile.jpg" class="profile-image img-fluid rounded-circle"/>
             </div>
         </section>

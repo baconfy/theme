@@ -217,6 +217,10 @@ body {
   color: #6c757d;
 }
 
+.by-app main.by-content .by-header .by-control img {
+  max-height: 30px;
+}
+
 /* Smartphones */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {

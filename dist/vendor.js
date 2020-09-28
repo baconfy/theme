@@ -37974,9 +37974,9 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/vagrant/code/baconfy/ui/resources/assets/js/vendor.js */"./resources/assets/js/vendor.js");
-__webpack_require__(/*! /home/vagrant/code/baconfy/ui/resources/assets/sass/vendor.scss */"./resources/assets/sass/vendor.scss");
-module.exports = __webpack_require__(/*! /home/vagrant/code/baconfy/ui/resources/assets/sass/app.scss */"./resources/assets/sass/app.scss");
+__webpack_require__(/*! /Users/rdehnhardt/Code/baconfy/ui/resources/assets/js/vendor.js */"./resources/assets/js/vendor.js");
+__webpack_require__(/*! /Users/rdehnhardt/Code/baconfy/ui/resources/assets/sass/vendor.scss */"./resources/assets/sass/vendor.scss");
+module.exports = __webpack_require__(/*! /Users/rdehnhardt/Code/baconfy/ui/resources/assets/sass/app.scss */"./resources/assets/sass/app.scss");
 
 
 /***/ })
