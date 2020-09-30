@@ -8,16 +8,16 @@
         @csrf
 
         <label class="block">
-            <span class="form-label" for="email">{{ __('ui::auth.login.email') }}</span>
+            <span class="form-label">{{ __('ui::auth.login.email') }}</span>
             <input type="email" name="email" class="form-input" value="{{ old('email') }}" placeholder="email@domain.com" required autofocus />
         </label>
 
         <label class="block">
-            <span class="form-label" for="password">{{ __('ui::auth.login.password') }}</span>
+            <span class="form-label">{{ __('ui::auth.login.password') }}</span>
             <input type="password" name="password" class="form-input" required />
         </label>
 
-        <div class="flex justify-between">
+        <div class="flex items-center justify-between">
             <label class="checkbox-label" for="remember">
                 <input type="checkbox" name="remember" id="remember" class="form-checkbox" {{ old('remember') ? 'checked' : '' }} />
                 <span>{{ __('ui::auth.login.remember-password') }}</span>
