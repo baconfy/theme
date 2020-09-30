@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -107,7 +107,7 @@
   var undefined;
 
   /** Used as the semantic version number. */
-  var VERSION = '4.17.19';
+  var VERSION = '4.17.20';
 
   /** Used as the size to enable large array optimizations. */
   var LARGE_ARRAY_SIZE = 200;
@@ -15683,7 +15683,7 @@
      * // => [{ 'a': 4, 'b': 5, 'c': 6 }]
      *
      * // Checking for several possible values
-     * _.filter(users, _.overSome([_.matches({ 'a': 1 }), _.matches({ 'a': 4 })]));
+     * _.filter(objects, _.overSome([_.matches({ 'a': 1 }), _.matches({ 'a': 4 })]));
      * // => [{ 'a': 1, 'b': 2, 'c': 3 }, { 'a': 4, 'b': 5, 'c': 6 }]
      */
     function matches(source) {
@@ -15720,7 +15720,7 @@
      * // => { 'a': 4, 'b': 5, 'c': 6 }
      *
      * // Checking for several possible values
-     * _.filter(users, _.overSome([_.matchesProperty('a', 1), _.matchesProperty('a', 4)]));
+     * _.filter(objects, _.overSome([_.matchesProperty('a', 1), _.matchesProperty('a', 4)]));
      * // => [{ 'a': 1, 'b': 2, 'c': 3 }, { 'a': 4, 'b': 5, 'c': 6 }]
      */
     function matchesProperty(path, srcValue) {
@@ -17328,14 +17328,26 @@ try {} catch (e) {}
 
 /***/ }),
 
-/***/ 1:
-/*!******************************************!*\
-  !*** multi ./resources/assets/js/app.js ***!
-  \******************************************/
+/***/ "./resources/assets/sass/app.scss":
+/*!****************************************!*\
+  !*** ./resources/assets/css/app.css ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/css-loader/dist/cjs.js):\nValidationError: Invalid options object. Sass Loader has been initialized using an options object that does not match the API schema.\n - options has an unknown property '0'. These properties are valid:\n   object { implementation?, sassOptions?, prependData?, sourceMap?, webpackImporter? }\n    at validate (/Users/rdehnhardt/Code/baconfy/ui/node_modules/schema-utils/dist/validate.js:98:11)\n    at Object.loader (/Users/rdehnhardt/Code/baconfy/ui/node_modules/css-loader/dist/index.js:36:28)\n    at /Users/rdehnhardt/Code/baconfy/ui/node_modules/webpack/lib/NormalModule.js:316:20\n    at /Users/rdehnhardt/Code/baconfy/ui/node_modules/loader-runner/lib/LoaderRunner.js:367:11\n    at /Users/rdehnhardt/Code/baconfy/ui/node_modules/loader-runner/lib/LoaderRunner.js:233:18\n    at runSyncOrAsync (/Users/rdehnhardt/Code/baconfy/ui/node_modules/loader-runner/lib/LoaderRunner.js:143:3)\n    at iterateNormalLoaders (/Users/rdehnhardt/Code/baconfy/ui/node_modules/loader-runner/lib/LoaderRunner.js:232:2)\n    at /Users/rdehnhardt/Code/baconfy/ui/node_modules/loader-runner/lib/LoaderRunner.js:205:4\n    at /Users/rdehnhardt/Code/baconfy/ui/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:85:15\n    at processTicksAndRejections (internal/process/task_queues.js:79:11)");
+
+/***/ }),
+
+/***/ 0:
+/*!***************************************************************************!*\
+  !*** multi ./resources/assets/js/app.js ./resources/assets/css/app.css ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/rdehnhardt/Code/baconfy/ui/resources/assets/js/app.js */"./resources/assets/js/app.js");
+__webpack_require__(/*! /Users/rdehnhardt/Code/baconfy/ui/resources/assets/js/app.js */"./resources/assets/js/app.js");
+module.exports = __webpack_require__(/*! /Users/rdehnhardt/Code/baconfy/ui/resources/assets/css/app.css */"./resources/assets/sass/app.scss");
 
 
 /***/ })

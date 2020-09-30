@@ -1,9 +1,10 @@
 const mix = require('laravel-mix');
 
-mix.setPublicPath('dist');
+mix.copy('resources/assets/images', 'dist', false);
 
-mix.sass('resources/assets/sass/vendor.scss', 'dist');
-mix.sass('resources/assets/sass/app.scss', 'dist');
-
-mix.js('resources/assets/js/vendor.js', 'dist');
-mix.js('resources/assets/js/app.js', 'dist');
+mix.postCss('resources/assets/css/app.css', 'dist', [
+    require('postcss-import'),
+    require('tailwindcss'),
+    require('postcss-nested'),
+    require('autoprefixer'),
+]);

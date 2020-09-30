@@ -18,9 +18,9 @@ return [
         'action' => 'Sign in',
         'email' => 'E-mail address',
         'password' => 'Password',
-        'remember-password' => 'Remember password',
+        'remember-password' => 'Keep me logged in',
         'forgot-password' => 'Forgot your password?',
-        'register-here' => '<p class="text-center">Don\'t have an account? <a href=":register">Register here</a></p>',
+        'register-here' => '<a href=":register">Don\'t have an account? Register here</a>',
     ],
     'register' => [
         'title' => 'Create a new account',

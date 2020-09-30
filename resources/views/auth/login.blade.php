@@ -7,36 +7,31 @@
     <form method="POST" action="{{ route('login') }}">
         @csrf
 
-        <div class="form-group">
-            <label class="form-label" for="email">{{ __('ui::auth.login.email') }}</label>
-            <input id="email" type="email" name="email" class="form-control" value="{{ old('email') }}" required autocomplete="email" autofocus/>
-            @error('email')
-            <div class="valid-feedback">{{ $message }}</div>@enderror
+        <label class="block">
+            <span class="form-label" for="email">{{ __('ui::auth.login.email') }}</span>
+            <input type="email" name="email" class="form-input" value="{{ old('email') }}" placeholder="email@domain.com" required autofocus />
+        </label>
+
+        <label class="block">
+            <span class="form-label" for="password">{{ __('ui::auth.login.password') }}</span>
+            <input type="password" name="password" class="form-input" required />
+        </label>
+
+        <div class="flex justify-between">
+            <label class="checkbox-label" for="remember">
+                <input type="checkbox" name="remember" id="remember" class="form-checkbox" {{ old('remember') ? 'checked' : '' }} />
+                <span>{{ __('ui::auth.login.remember-password') }}</span>
+            </label>
+
+            @if (Route::has('password.request'))
+                <a class="form-label" href="{{ route('password.request') }}">{{ __('ui::auth.login.forgot-password') }}</a>
+            @endif
         </div>
 
-        <div class="form-group">
-            <label class="form-label" for="password">{{ __('ui::auth.login.password') }}</label>
-            <input id="password" type="password" name="password" class="form-control" required/>
-            @error('password')
-            <div class="valid-feedback">{{ $message }}</div>@enderror
-        </div>
-
-        <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-            <label class="form-check-label" for="remember">{{ __('ui::auth.login.remember-password') }}</label>
-        </div>
-
-        <button class="btn btn-block btn-primary" type="submit">{{ __('ui::auth.login.action') }}</button>
+        <button class="btn btn-primary mt-7" type="submit">{{ __('ui::auth.login.action') }}</button>
     </form>
 
-    @if (Route::has('password.request'))
-        <div class="divider"></div>
-        <a class="d-block text-center" href="{{ route('password.request') }}">{{ __('ui::auth.login.forgot-password') }}</a>
-
-        @if (Route::has('register'))
-            {!! __('ui::auth.login.register-here', ['register' => route('register')])  !!}
-        @endif
+    @if (Route::has('register'))
+        <p class="mt-10 text-center text-sm">{!! __('ui::auth.login.register-here', ['register' => route('register')])  !!}</p>
     @endif
-
-    @include('ui::auth.social')
 @endsection

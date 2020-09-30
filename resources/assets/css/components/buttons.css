@@ -1,0 +1,11 @@
+@tailwind components;
+
+@layer components {
+    .btn {
+        @apply w-full border py-2 font-semibold tracking-wide;
+    }
+
+    .btn-primary {
+        @apply bg-gray-500 border-white text-white;
+    }
+}
