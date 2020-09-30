@@ -3,8 +3,9 @@
 return [
     'confirm' => [
         'title' => 'Confirm Password',
-        'welcome' => 'Please confirm your password before continuing.',
+        'welcome' => 'Please confirm your password before proceed with this action.',
         'action' => 'Confirm Password',
+        'back' => 'Back to the previous page',
     ],
     'email' => [
         'title' => 'Reset Password',
