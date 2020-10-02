@@ -10,8 +10,8 @@ class ServiceProvider extends LaravelServiceProvider
     use ReflectionTrait;
 
     /**
-     * Bootstrap any application services.
-     *
+     * Boot Module
+     * 
      * @return void
      */
     public function boot()
