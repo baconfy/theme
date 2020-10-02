@@ -1,80 +1,31 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/rdehnhardt/skeleton/master/public/img/logo.png" width="70%">
-</p>
-
-## Disable register
-
-This application has disabled registration page.
-
-## Route system
-
-The routing folder for this application has been changed to the application Http folder.
- 
-Directory: `app/Http/Routes`
-
-## How to install
-
-First make storage folder writable. 
-
-```
-cp .env.example .env
-```
-
-```
-composer install
-```
-
-```
-php artisan key:generate
-```
-
-```
-php artisan migrate --seed
-```
-
-```
-php artisan storage:link
-```
-
-# Front-end development
-
-```
-npm install
-```
-
-```
-npm run watch
-```
-
-## Make production
-
-```
-npm run production
-```
-
 # Screenshots
-
-#### Front
-<p align="center">
-  <img src="https://raw.githubusercontent.com/rdehnhardt/skeleton/master/public/img/screen/front.png">
-</p>
 
 #### Login
 <p align="center">
-  <img src="https://raw.githubusercontent.com/rdehnhardt/skeleton/master/public/img/screen/login.png">
+  <img src="https://github.com/baconfy/ui/raw/master/screenshots/login.jpg">
+</p>
+
+#### Reset Password
+<p align="center">
+  <img src="https://github.com/baconfy/ui/raw/master/screenshots/reset-password.jpg">
+</p>
+
+#### Register
+<p align="center">
+  <img src="https://github.com/baconfy/ui/raw/master/screenshots/register.jpg">
+</p>
+
+#### Confirm Password
+<p align="center">
+  <img src="https://github.com/baconfy/ui/raw/master/screenshots/confirm-password.jpg">
 </p>
 
 #### Dashboard
 <p align="center">
-  <img src="https://raw.githubusercontent.com/rdehnhardt/skeleton/master/public/img/screen/dashboard.png">
+  <img src="https://github.com/baconfy/ui/raw/master/screenshots/dashboard.jpg">
 </p>
 
-#### User List
+#### Module Selector
 <p align="center">
-  <img src="https://raw.githubusercontent.com/rdehnhardt/skeleton/master/public/img/screen/users-list.png">
-</p>
-
-#### User Edit
-<p align="center">
-  <img src="https://raw.githubusercontent.com/rdehnhardt/skeleton/master/public/img/screen/user-edit.png">
+  <img src="https://github.com/baconfy/ui/raw/master/screenshots/module-select.jpg">
 </p>
