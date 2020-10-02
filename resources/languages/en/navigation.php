@@ -2,5 +2,5 @@
 
 return [
     'support' => 'Support',
-    'logout' => 'Log out',
+    'logout' => 'Sign out',
 ];

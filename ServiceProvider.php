@@ -11,7 +11,7 @@ class ServiceProvider extends LaravelServiceProvider
 
     /**
      * Boot Module
-     * 
+     *
      * @return void
      */
     public function boot()
