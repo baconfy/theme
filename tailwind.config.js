@@ -8,9 +8,14 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-                serif: ['Prata', ...defaultTheme.fontFamily.sans],
+                sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+                serif: ['Prata', ...defaultTheme.fontFamily.serif],
             },
+            spacing: {
+                '72': '18rem',
+                '84': '21rem',
+                '96': '24rem',
+            }
         }
     },
     variants: {},

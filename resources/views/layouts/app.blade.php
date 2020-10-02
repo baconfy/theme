@@ -1,55 +1,19 @@
-@extends('ui::layouts.empty', ['class' => 'by-app'])
+@extends('ui::layouts.empty')
 
 @section('page')
-    <input type="checkbox" class="d-none" id="by-navigation-toggle"/>
+    <div class="h-screen flex text-gray-600">
+        <input type="checkbox" class="hidden" id="by-navigation-toggle" />
 
-    <aside class="by-navigation">
-        <section class="by-header">
-            <img src="{{ config('ui.brand-vertical') }}" class="img-fluid"/>
-        </section>
+        <div class="by-navigation-overlay"></div>
 
-        <section class="by-content">
-            <fieldset>
-                <legend>Navigation</legend>
+        <nav class="by-navigation">
+            @include('ui::layouts.partials.sidebar')
+        </nav>
 
-                <ul>
-                    <li><a href="#"><i class="far fa-chart-bar"></i> Dashboard</a></li>
-                    <li><a href="#"><i class="fas fa-stream"></i> My Activity</a></li>
-                </ul>
-            </fieldset>
+        <main class="by-content">
+            @include('ui::layouts.partials.header')
 
-            <fieldset>
-                <legend>Settings</legend>
-
-                <ul>
-                    <li><a href="#"><i class="fas fa-th-large"></i> Widgets</a></li>
-                    <li><a href="#"><i class="fab fa-sourcetree"></i> Data Sources</a></li>
-                    <li><a href="#"><i class="fas fa-share-alt"></i> Share Dashboard</a></li>
-                    <li><a href="#"><i class="fas fa-globe-americas"></i> Location & Timezone</a></li>
-                </ul>
-            </fieldset>
-        </section>
-
-        <section class="by-footer">
-            <a class="btn btn-block btn-sm btn-secondary" href="{{ route('logout') }}" title="{{ __('ui::navigation.logout') }}"><i class="fas fa-power-off mr-1"></i> Sign out</a>
-        </section>
-    </aside>
-
-    <main class="by-content">
-        <section class="by-header">
-            <label for="by-navigation-toggle" class="hamburger hamburger--elastic" type="button">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </label>
-
-            <div class="by-page-title">Dashboard</div>
-
-            <div class="by-control push">
-                <img src="/profile.jpg" class="profile-image img-fluid rounded-circle"/>
-            </div>
-        </section>
-
-        @yield('content')
-    </main>
+            @yield('content')
+        </main>
+    </div>
 @endsection

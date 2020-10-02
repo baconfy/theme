@@ -7,7 +7,7 @@
 
     <div class="flex flex-col justify-between w-full lg:w-1/3">
         <header class="p-4">
-            <img src="{{ config('ui.brand-vertical') }}" alt="{{ config('app.name', 'Baconfy') }}" class="h-15" />
+            <img src="{{ config('ui.brand-icon') }}" class="w-10 h-10" />
         </header>
 
         <main class="px-10 lg:px-20">
