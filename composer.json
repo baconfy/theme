@@ -15,7 +15,6 @@
     }
   ],
   "require": {
-    "baconfy/support": "^1.0",
     "laracasts/flash": "^3.1"
   },
   "autoload": {

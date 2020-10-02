@@ -3,8 +3,9 @@
 return [
     'confirm' => [
         'title' => 'Confirm Password',
-        'welcome' => 'Please confirm your password before continuing.',
+        'welcome' => 'Please confirm your password before proceed with this action.',
         'action' => 'Confirm Password',
+        'back' => 'Back to the previous page',
     ],
     'email' => [
         'title' => 'Reset Password',
@@ -18,9 +19,9 @@ return [
         'action' => 'Sign in',
         'email' => 'E-mail address',
         'password' => 'Password',
-        'remember-password' => 'Remember password',
-        'forgot-password' => 'Forgot your password?',
-        'register-here' => '<p class="text-center">Don\'t have an account? <a href=":register">Register here</a></p>',
+        'remember-password' => 'Keep me logged in',
+        'forgot-password' => 'Password Recovery',
+        'register-here' => '<a href=":register">Don\'t have an account? Register here</a>',
     ],
     'register' => [
         'title' => 'Create a new account',
@@ -28,7 +29,7 @@ return [
         'action' => 'Create my account',
         'name' => 'Name',
         'confirm' => 'Confirm Password',
-        'agreement' => 'I agree to <a href=":terms">Terms of Service</a> & <a href=":privacy">Privacy Policy</a>',
+        'agreement' => 'I agree to <a class="text-blue-400" href=":terms">Terms of Service</a> & <a class="text-blue-400" href=":privacy">Privacy Policy</a>',
         'already-account' => 'I already have an account?',
         'back-action' => 'Back to login',
     ],

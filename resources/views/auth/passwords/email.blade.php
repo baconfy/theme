@@ -11,18 +11,15 @@
     <form class="form" method="POST" action="{{ route('password.email') }}">
         @csrf
 
-        <div class="form-group">
-            <label class="form-label" for="email">{{ __('ui::auth.login.email') }}</label>
-            <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required/>
-            @error('email')
-            <div class="valid-feedback">{{ $message }}</div>@enderror
-        </div>
+        <label class="block">
+            <span class="form-label">{{ __('ui::auth.login.email') }}</span>
+            <input type="email" name="email" class="form-input" value="{{ old('email') }}" placeholder="email@domain.com" required autofocus />
+        </label>
 
-        <button class="btn btn-block btn-primary" type="submit">{{ __('ui::auth.email.action') }}</button>
+        <button class="btn btn-primary" type="submit">{{ __('ui::auth.email.action') }}</button>
     </form>
 
     @if (Route::has('login'))
-        <div class="divider"></div>
-        <p class="text-center">{{ __('ui::auth.register.already-account') }} <a href="{{ route('login') }}">{{ __('ui::auth.register.back-action') }}</a></p>
+        <p class="mt-10 text-center text-sm">{{ __('ui::auth.register.already-account') }} <a href="{{ route('login') }}">{{ __('ui::auth.register.back-action') }}</a></p>
     @endif
 @endsection
