@@ -14,12 +14,8 @@
         </main>
 
         <input type="checkbox" class="hidden" id="by-modules-toggle"/>
-        <div class="by-modules flex fixed w-full content-center flex-wrap bg-white h-full z-20">
-            <div class="w-full p-2">
-                <div class="text-center p-2">
-                    <i class="fas fa-th-large mr-2"></i>
-                </div>
-            </div>
+        <div class="by-modules">
+            @include('ui::layouts.partials.modules')
         </div>
     </div>
 @endsection

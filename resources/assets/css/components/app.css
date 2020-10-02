@@ -28,7 +28,21 @@
     @apply transition duration-300 ease-in;
 }
 
-/*  NAVIGATION CONTENT  */
+/*  CONTENT  */
 .by-content {
     @apply w-full p-4;
 }
+
+/*  MODULES  */
+.by-modules {
+    @apply hidden transform -translate-y-full inset-y-0 top-0 fixed flex flex-col justify-between items-center h-screen w-full bg-white z-20;
+}
+
+#by-modules-toggle:checked ~ .by-modules {
+    @apply translate-y-0 transition duration-300 ease-in;
+}
+
+#by-modules-toggle:not(:checked) ~ .by-modules {
+    @apply transition duration-300 ease-out;
+}
+
