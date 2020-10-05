@@ -8,3 +8,4 @@ mix.postCss('resources/assets/css/app.css', 'dist', [
     require('postcss-nested'),
     require('autoprefixer'),
 ]);
+
