@@ -22,12 +22,17 @@
   },
   "autoload": {
     "psr-4": {
-      "Baconfy\\Ui\\": ""
+      "Baconfy\\Ui\\": "src/"
     }
   },
   "extra": {
     "branch-alias": {
       "dev-master": "1.x-dev"
+    },
+    "laravel": {
+      "providers": [
+        "Baconfy\\Ui\\UiServiceProvider"
+      ]
     }
   },
   "config": {
