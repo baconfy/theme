@@ -1,4 +1,9 @@
 {
     "/dist/js/app.js": "/dist/js/app.js",
-    "/dist/css/app.css": "/dist/css/app.css"
+    "/dist/css/app.css": "/dist/css/app.css",
+    "/dist/brand-horizontal-large.png": "/dist/brand-horizontal-large.png",
+    "/dist/brand-horizontal.png": "/dist/brand-horizontal.png",
+    "/dist/brand-vertical-large.png": "/dist/brand-vertical-large.png",
+    "/dist/brand-vertical.png": "/dist/brand-vertical.png",
+    "/dist/icon.svg": "/dist/icon.svg"
 }

@@ -2,61 +2,62 @@
 
 namespace Baconfy\Ui;
 
+use Baconfy\Traits\Loaders\ViewComponentsTrait;
+use Baconfy\Ui\Components\AppLayout;
+use Baconfy\Ui\Components\EmptyLayout;
+use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 use Baconfy\Traits\ReflectionTrait;
-use ReflectionException;
 
 class UiServiceProvider extends LaravelServiceProvider
 {
-    use ReflectionTrait;
+    use ReflectionTrait, ViewComponentsTrait;
 
     /**
      * Boot Module
-     *
-     * @return void
-     * @throws ReflectionException
      */
     public function boot()
     {
-        $this->bootAssets();
-        $this->bootConfig();
-        $this->bootTranslations();
-        $this->bootViews();
+        $this->configureAssets();
+        $this->configureConfig();
+        $this->configureTranslations();
+        $this->configureViews();
     }
 
     /**
      * Boot assets
-     * @throws ReflectionException
      */
-    private function bootAssets()
+    private function configureAssets()
     {
-        $this->publishes([$this->getClassDirectory('../dist') => public_path('baconfy/ui')], 'public');
+        $this->publishes([__DIR__ . '/../dist' => public_path('baconfy/ui')], 'public');
     }
 
     /**
      * Boot configuration
-     * @throws ReflectionException
      */
-    private function bootConfig()
+    private function configureConfig()
     {
-        $this->mergeConfigFrom($this->getClassDirectory('../config/ui.php'), 'ui');
+        $this->mergeConfigFrom(__DIR__ . '/../config/ui.php', 'ui');
     }
 
     /**
      * Boot views
-     * @throws ReflectionException
      */
-    private function bootViews()
+    private function configureViews()
     {
-        $this->loadViewsFrom($this->getClassDirectory('../resources/views'), 'ui');
+        // Views
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'ui');
+
+        // View Components
+        $this->loadModuleViewComponentsFromDirectory(__DIR__ . '/../resources/views/components');
+        $this->loadModuleViewComponents('Components');
     }
 
     /**
      * Boot languages
-     * @throws ReflectionException
      */
-    private function bootTranslations()
+    private function configureTranslations()
     {
-        $this->loadTranslationsFrom($this->getClassDirectory('../resources/languages'), 'ui');
+        $this->loadTranslationsFrom(__DIR__ . '/../resources/lang', 'ui');
     }
 }
