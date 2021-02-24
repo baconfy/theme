@@ -13,7 +13,7 @@ return [
     'email' => [
         'title' => 'Reset Password',
         'welcome' => 'Fill your e-mail account to reset your password.',
-        'action' => 'Send reset link',
+        'action' => 'Send me a link',
         'already-account' => 'I already have an account.',
     ],
     'login' => [
@@ -28,11 +28,11 @@ return [
     ],
     'register' => [
         'title' => 'Create a new account',
-        'welcome' => 'Fill in the information below to get an account.',
+        'welcome' => 'Fill in the information below to create your account.',
         'action' => 'Create my account',
         'name' => 'Name',
         'confirm' => 'Confirm Password',
-        'agreement' => 'I agree to <a class="leading-tight text-xs uppercase tracking-wide leading-tight text-primary" href=":terms">Terms of Service</a> & <a class="leading-tight text-xs uppercase tracking-wide leading-tight text-primary" href=":privacy">Privacy Policy</a>',
+        'agreement' => 'I&nbsp;agree&nbsp;to&nbsp;<a class="leading-tight text-xxs uppercase tracking-wide leading-tight text-primary" href=":terms">Terms&nbsp;of&nbsp;Service</a>&nbsp;&&nbsp;<a class="leading-tight text-xxs uppercase tracking-wide leading-tight text-primary" href=":privacy">Privacy&nbsp;Policy</a>',
         'already-account' => 'I already have an account?',
         'back-action' => 'Back to login',
     ],
