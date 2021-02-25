@@ -9,26 +9,24 @@
         </header>
 
         <main class="px-10 mb-16 lg:px-20">
-            <h1 class="font-serif leading-tight text-gray-600 text-4xl">{{ $title }}</h1>
-            <h2 class="mt-2 mb-7 text-sm text-gray-400">{{ $welcome }}</h2>
+            <h1 class="font-serif leading-tight text-gray-600 text-4xl">{{ __($title) }}</h1>
+            <h2 class="mt-2 mb-7 text-sm text-gray-400">{{ __($welcome) }}</h2>
 
-            @if ($errors->any())
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
+            <!-- Validation Errors -->
+            <x-validation-errors class="mb-4" :errors="$errors" />
+
+            <!-- Session Status -->
+            <x-session-status class="mb-4" :status="session('status')"/>
 
             {{ $slot }}
         </main>
 
         <footer class="flex flex-col lg:flex-row items-center justify-between py-3 px-5 lg:px-10">
-            <div class="leading-tight text-xs tracking-wide text-gray-500">©{{ date('Y') }} - All Rights Reserved</div>
+            <div class="leading-tight text-xs tracking-wide text-gray-500">©{{ date('Y') }} - {{ __('All Rights Reserved') }}</div>
             <div class="text-gray-400 text-xs">
-                {!! __('ui::auth.guest.agreement', ['terms' => route('terms'), 'privacy' => route('privacy')])  !!}
+                <a class="leading-tight text-xs tracking-wide leading-tight text-primary mr-1" href="{{ route('terms') }}">{{ __('Terms of Service') }}</a>
+                &#8226;
+                <a class="leading-tight text-xs tracking-wide leading-tight text-primary ml-1" href="{{ route('privacy') }}">{{ __('Privacy Policy') }}</a>
             </div>
         </footer>
     </div>

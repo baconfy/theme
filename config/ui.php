@@ -23,5 +23,11 @@ return [
         'background' => 'https://i.imgur.com/CfGXzrQ.jpg',
         'text' => 'Everything is better with bacon!',
     ],
-    
+
+    'mail' => [
+        'theme' => 'baconfy',
+        'paths' => [
+            __DIR__ . '/../resources/views/mail',
+        ],
+    ]
 ];

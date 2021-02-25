@@ -5,7 +5,9 @@ namespace Baconfy\Ui;
 use Baconfy\Traits\Loaders\ViewComponentsTrait;
 use Baconfy\Ui\Components\AppLayout;
 use Baconfy\Ui\Components\EmptyLayout;
+use Illuminate\Mail\Markdown;
 use Illuminate\Support\Facades\Blade;
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 use Baconfy\Traits\ReflectionTrait;
 
@@ -22,6 +24,7 @@ class UiServiceProvider extends LaravelServiceProvider
         $this->configureConfig();
         $this->configureTranslations();
         $this->configureViews();
+        $this->configureMails();
     }
 
     /**
@@ -59,5 +62,16 @@ class UiServiceProvider extends LaravelServiceProvider
     private function configureTranslations()
     {
         $this->loadTranslationsFrom(__DIR__ . '/../resources/lang', 'ui');
+    }
+
+    /**
+     * Configure mails
+     */
+    private function configureMails()
+    {
+        Config::set('mail.markdown.theme', 'default');
+        Config::set('mail.markdown.paths', [
+            __DIR__ . '/../resources/views/mail'
+        ]);
     }
 }

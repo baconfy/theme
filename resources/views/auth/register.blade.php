@@ -1,27 +1,33 @@
-<x-guest-layout :title="__('ui::auth.register.title')" :welcome="__('ui::auth.register.welcome')">
+<x-guest-layout title="Create a new account" welcome="Fill in the information below to create your account.">
     <form method="POST" action="{{ route('register') }}">
-    @csrf
+        @csrf
 
         <!-- Name -->
-        <x-input type="text" name="name" :label="__('ui::auth.register.name')" :value="old('name')" required autofocus />
+        <x-input type="text" name="name" label="Name" :value="old('name')" required autofocus />
 
         <!-- Email -->
-        <x-input type="email" name="email" :label="__('ui::auth.login.email')" :value="old('email')" required />
+        <x-input type="email" name="email" label="E-mail address" :value="old('email')" required />
 
         <!-- Password -->
-        <x-input type="password" name="password" :label="__('ui::auth.login.password')" autocomplete="new-password" required />
+        <x-input type="password" name="password" label="Your Password" autocomplete="new-password" required />
 
         <!-- Confirm Password -->
-        <x-input type="password" name="password_confirmation" :label="__('ui::auth.register.confirm')" required />
+        <x-input type="password" name="password_confirmation" label="Confirm Your Password" required />
 
         <!-- Policy & Terms agreement -->
-        <x-checkbox name="agreement" :label="__('ui::auth.register.agreement', ['terms' => route('terms'), 'privacy' => route('privacy')])" :checked="old('agreement') ? true : false" />
+        <label class="flex focus:shadow-none hover:text-gray-500" for="agreement">
+            <input type="checkbox" id="agreement" name="agreement" class='mr-2 h-5 w-5 text-primary focus:shadow-none focus:ring-0' />
+
+            <span class="text-gray-400 text-sm">
+                I agree to <a class="text-primary" href="{{ route('terms') }}">{{ __('Terms of Service') }}</a> & <a class="text-primary" href="{{ route('privacy') }}">{{ __('Privacy Policy') }}</a>
+            </span>
+        </label>
 
         <!-- Action -->
-        <x-button class="w-full py-3 mt-8" :label="__('ui::auth.register.action')" />
+        <x-button class="w-full py-3 mt-8" label="Create my account" />
 
         @if (Route::has('login'))
-            <p class="mt-10 text-center text-gray-600 text-sm">{{ __('ui::auth.register.already-account') }} <x-href href="{{ route('login') }}">{{ __('ui::auth.register.back-action') }}</x-href></p>
+            <p class="mt-10 text-center text-gray-600 text-sm">{{ __('You already have an account?') }} <x-href href="{{ route('login') }}">{{ __('Back to login') }}</x-href></p>
         @endif
     </form>
 </x-guest-layout>
