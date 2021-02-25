@@ -17,7 +17,7 @@ return [
         'already-account' => 'I already have an account.',
     ],
     'login' => [
-        'title' => 'Welcome Back!',
+        'title' => 'Restricted Area!',
         'welcome' => 'Please fill your credentials to sign in.',
         'action' => 'Sign in',
         'email' => 'E-mail address',
