@@ -13,7 +13,7 @@
             @endif
         </div>
 
-        <x-button class="w-full py-3 mt-8">{{ __('ui::auth.login.action') }}</x-button>
+        <x-button class="w-full py-3 mt-8" :label="__('ui::auth.login.action')" />
     </form>
 
     @if (Route::has('register'))

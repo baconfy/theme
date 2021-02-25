@@ -5,7 +5,8 @@
         <!-- Email Address -->
         <x-input type="email" name="email" :label="__('ui::auth.login.email')" :value="old('email')" placeholder="email@domain.com" required autofocus />
 
-        <x-button class="w-full py-3 mt-8">{{ __('ui::auth.email.action') }}</x-button>
+        <!-- Action -->
+        <x-button class="w-full py-3 mt-8" :label="__('ui::auth.email.action')" />
 
         @if (Route::has('login'))
             <p class="mt-10 text-center text-gray-600 text-sm">{{ __('ui::auth.register.already-account') }} <x-href href="{{ route('login') }}">{{ __('ui::auth.register.back-action') }}</x-href></p>

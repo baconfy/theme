@@ -17,9 +17,8 @@
         <!-- Policy & Terms agreement -->
         <x-checkbox name="agreement" :label="__('ui::auth.register.agreement', ['terms' => route('terms'), 'privacy' => route('privacy')])" :checked="old('agreement') ? true : false" />
 
-        <x-button class="w-full py-3 mt-8">
-            {{ __('ui::auth.register.action') }}
-        </x-button>
+        <!-- Action -->
+        <x-button class="w-full py-3 mt-8" :label="__('ui::auth.register.action')" />
 
         @if (Route::has('login'))
             <p class="mt-10 text-center text-gray-600 text-sm">{{ __('ui::auth.register.already-account') }} <x-href href="{{ route('login') }}">{{ __('ui::auth.register.back-action') }}</x-href></p>

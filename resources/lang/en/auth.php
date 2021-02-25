@@ -44,11 +44,10 @@ return [
     ],
     'verify' => [
         'title' => 'E-mail Verification',
-        'welcome' => 'Verify Your Email Address',
-        'alert' => 'A fresh verification link has been sent to your email address.',
-        'before' => 'Before proceeding, please check your email for a verification link.',
+        'welcome' => 'Thanks for signing up! Before getting started, could you verify your email address by clicking on the link we just emailed to you? If you didn\'t receive the email, we will gladly send you another.',
+        'alert' => 'A new verification link has been sent to the email address you provided during registration.',
         'receive' => 'If you did not receive the email',
-        'request' => 'click here to request another',
+        'action' => 'Resend Verification Email',
     ],
     'social' => [
         'sign-in' => 'or sign in with'
