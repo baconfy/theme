@@ -1,4 +1,4 @@
-<x-empty-layout class="guest flex h-screen">
+<x-empty-layout class="guest flex h-screen" page-title="{{ $attributes['page-title'] }}">
     <div class="hidden flex-1 content-end flex-wrap lg:flex" style="background-image: url('{{ config('ui.guest.background') }}')">
         <p class="text-white text-2xl leading-tight m-5">{{ config('ui.guest.text') }}</p>
     </div>
@@ -9,8 +9,8 @@
         </header>
 
         <main class="px-10 mb-16 lg:px-20">
-            <h1 class="font-serif leading-tight text-gray-600 text-4xl">{{ __($title) }}</h1>
-            <h2 class="mt-2 mb-7 text-sm text-gray-400">{{ __($welcome) }}</h2>
+            <h1 class="font-serif leading-tight text-gray-600 text-4xl">{{ __($attributes['page-title']) }}</h1>
+            <h2 class="mt-2 mb-7 text-sm text-gray-400">{{ __($attributes['welcome']) }}</h2>
 
             <!-- Validation Errors -->
             <x-validation-errors class="mb-4" :errors="$errors" />

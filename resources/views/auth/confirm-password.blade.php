@@ -1,4 +1,4 @@
-<x-empty-layout class="flex justify-center h-screen">
+<x-empty-layout class="flex justify-center h-screen" page-title="Confirm Your Password">
 
     <div class="px-10 lg:px-20 pb-16 m-auto">
         <img src="{{ config('ui.brand-icon') }}" class="w-10 h-10 mb-10" />

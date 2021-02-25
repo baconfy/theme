@@ -1,4 +1,4 @@
-<x-guest-layout title="Restricted Area" welcome="Please fill your credentials to sign in.">
+<x-guest-layout page-title="Restricted Area" welcome="Please fill your credentials to sign in.">
     <form method="POST" action="{{ route('login') }}">
         @csrf
 

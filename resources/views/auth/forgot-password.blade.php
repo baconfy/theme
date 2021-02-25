@@ -1,4 +1,4 @@
-<x-guest-layout title="Reset Password" welcome="Fill your e-mail account to reset your password.">
+<x-guest-layout page-title="Reset Password" welcome="Fill your e-mail account to reset your password.">
     <form method="POST" action="{{ route('password.email') }}">
     @csrf
 

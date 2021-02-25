@@ -1,4 +1,4 @@
-<x-guest-layout title="Create a new account" welcome="Fill in the information below to create your account.">
+<x-guest-layout page-title="Register" welcome="Fill in the information below to create your account.">
     <form method="POST" action="{{ route('register') }}">
         @csrf
 

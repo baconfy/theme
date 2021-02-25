@@ -8,11 +8,11 @@
     <meta name="format-detection" content="telephone=no"/>
     <meta name="mobile-web-app-capable" content="yes"/>
 
+    <!-- Page Title -->
+    <title>{{ config('app.name', 'Baconfy') }} :: {{ __($attributes['page-title']) }}</title>
+
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <!-- Page Title -->
-    <title>{{ config('app.name', 'Baconfy') }}</title>
 
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
