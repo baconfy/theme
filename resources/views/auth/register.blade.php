@@ -9,10 +9,10 @@
         <x-input type="email" name="email" :label="__('ui::auth.login.email')" :value="old('email')" required />
 
         <!-- Password -->
-        <x-input type="password" name="password" :label="__('ui::auth.login.password')" :value="old('email')" autocomplete="new-password" required />
+        <x-input type="password" name="password" :label="__('ui::auth.login.password')" autocomplete="new-password" required />
 
         <!-- Confirm Password -->
-        <x-input type="password" name="password_confirmation" :label="__('ui::auth.register.confirm')" :value="old('password_confirmation')" required />
+        <x-input type="password" name="password_confirmation" :label="__('ui::auth.register.confirm')" required />
 
         <!-- Policy & Terms agreement -->
         <x-checkbox name="agreement" :label="__('ui::auth.register.agreement', ['terms' => route('terms'), 'privacy' => route('privacy')])" :checked="old('agreement') ? true : false" />

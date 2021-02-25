@@ -3,7 +3,7 @@
         @csrf
 
         <x-input type="email" name="email" :label="__('ui::auth.login.email')" :value="old('email')" placeholder="email@domain.com" required autofocus />
-        <x-input type="password" name="password" :label="__('ui::auth.login.password')" :value="old('email')" required />
+        <x-input type="password" name="password" :label="__('ui::auth.login.password')" required />
 
         <div class="flex items-center justify-between">
             <x-checkbox name="remember" :label="__('ui::auth.login.remember-password')" :checked="old('remember') ? true : false" />

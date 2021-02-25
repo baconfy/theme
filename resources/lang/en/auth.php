@@ -6,8 +6,8 @@ return [
     ],
     'confirm' => [
         'title' => 'Confirm Password',
-        'welcome' => 'Please confirm your password before proceed with this action.',
-        'action' => 'Confirm Password',
+        'welcome' => 'This is a secure area of the application. Please confirm your password before continuing.',
+        'action' => 'Confirm',
         'back' => 'Back to the previous page',
     ],
     'email' => [
