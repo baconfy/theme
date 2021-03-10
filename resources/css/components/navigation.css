@@ -1,0 +1,27 @@
+@tailwind components;
+
+.by-navigation {
+    @apply transform -translate-x-full fixed flex flex-col justify-between inset-y-0 left-0 w-84 p-4 z-10 bg-white overflow-auto;
+}
+
+/*  NAVIGATION TOGGLE  */
+#by-navigation-toggle:not(:checked) ~ nav {
+    @apply transition duration-300 ease-in;
+}
+
+#by-navigation-toggle:checked ~ nav {
+    @apply translate-x-0 transition duration-300 ease-out;
+}
+
+/* RESPONSIVE */
+@screen lg {
+    .by-navigation {
+        @apply static inset-auto translate-x-0 w-84;
+    }
+}
+
+@screen xl {
+    .by-navigation {
+        @apply static inset-auto translate-x-0 w-96;
+    }
+}

@@ -1,5 +1,8 @@
 @tailwind base;
+
 @tailwind components;
+@import "components/navigation.css";
+
 @tailwind utilities;
 
 @layer utilities {
